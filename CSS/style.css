@@ -1,0 +1,33 @@
+/* *{
+    background-color: aqua;
+}
+
+
+.P1{
+    color: green;
+    background-color: whitesmoke;
+    border: 2px solid yellow;
+    height: 100px;
+    width: 100px;
+}
+#D1{
+    color:burlywood;
+    background-color:brown;
+    border: 2px dotted black;
+    height: 100px;
+    width: 100px;
+
+} */
+
+p{
+    border: 2px solid black;
+    font-style: italic;
+    font-size: 25px;
+    font-family:
+
+    font-weight: 900;
+    line-height: 50px;
+    word-spacing: 50px;
+    
+
+}

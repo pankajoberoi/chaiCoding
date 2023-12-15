@@ -1,0 +1,30 @@
+p{
+    background-color: violet;
+    /* border-style:solid;
+    border-width: 2px;
+    border-color: yellow; */
+    /* border:solid 3px red; */
+
+    /* border-radius: 10px;
+    border-color: red;
+    border-style: solid;
+    border-width: 4px;
+
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    border-bottom: 4px dotted black; */
+
+
+    /* border-top: 2px;
+    border-left: 3px; */
+
+    border: 2px solid black;
+    height: 250px;
+    width: 100px;
+}
+/* span{
+    border: 2px solid black;
+    background-color: blueviolet;
+    height: 250px;
+    width: 100px;
+} */
