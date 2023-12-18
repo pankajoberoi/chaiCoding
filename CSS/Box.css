@@ -28,3 +28,42 @@ p{
     height: 250px;
     width: 100px;
 } */
+
+*{
+    box-sizing: border-box;
+    margin: 50px;
+    padding: 25px;
+}
+.FirstPara{
+background-color:aqua;
+height: 200px;
+width: 200px;
+/* border:2px solid black;
+background-color:aqua;
+height: 200px;
+width: 200px;
+padding: 20px;
+margin: 100px;*/
+
+}
+
+.SecondPara{
+background-color: blueviolet;
+height: 200px;
+width: 200px;
+/* background-color: blueviolet;
+height: 200px;
+width: 200px;
+margin-bottom: 50px;
+padding-top: 50px; 
+padding: 50px 25px 50px 25px;*/
+}
+.ThirdPara{
+
+/* background-color: antiquewhite;
+height: 200px;
+width: 200px;
+padding-right: 40px;
+padding-top: 40px;
+padding-left: 40px;*/
+}
