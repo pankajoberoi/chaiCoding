@@ -1,0 +1,68 @@
+.container{
+    border: 4px solid red;
+    height:3000px;
+    width: 4000px;
+
+}
+.box{
+    border: 4px solid black;
+    height: 4000px;
+}
+.image1{
+    border:5px solid brown;
+}
+.image2{
+    border:5px solid blue;
+}
+.image3{
+    border:5px solid green;
+}
+.image4{
+    border:5px solid grey;
+}
+
+
+.image2{
+    
+    /* top:100px;
+    left:100px; */
+    /* top:250px; */
+    /* left:100px; */
+}
+.image4{
+   /* position: absolute; */
+   /* right:100px; */
+   /* top:100px; */
+}
+.image4{
+    /* position: fixed; */
+    /* top:100px */
+    /* position: fixed;
+    top: 100px; */
+    position: sticky;
+    /* top: 100px; */
+    /* left:750px; */
+    left:500px;
+
+}
+.image2{
+    /* position: sticky; */
+    /* top: 100px;
+    right: 100px;
+    left:100px; */
+    /* position: fixed;
+    top: 100px; */
+    /* position: sticky; */
+    /* top: 100px; */
+    /* top: 100px;
+    left:200px; */
+    /* position: fixed;
+    top:100px; */
+    position: sticky;
+    left:100px
+
+}
+
+
+
+
