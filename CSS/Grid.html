@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+           /* height: 1000px;
+            grid-template-columns: 350px 350px;
+            grid-template-rows: 300px 300px 300px;*/
+            width: 80vw;
+            height: 100vh;
+           /* grid-template-columns: 1fr 2fr 1fr;*/
+           grid-template-columns: repeat(4,1fr);
+            gap: 34px;
+            row-gap: 80px;
+            column-gap: 40px;
+           /* justify-items: center;
+            align-items: center;*/
+           /*justify-items: center;
+            align-items: center;*/
+            place-content: center;
+        }
+        .item{
+            font-size: 150px;
+            border: 2px solid red;
+            height: 250px;
+            width: 250px;           
+        }
+        /*.item4{
+            grid-row:1/2 ; same thing
+           grid-row-start: 1;
+           grid-row-end: 2;
+           grid-column: 1/2;
+        }
+        .item1{
+            grid-row:1/2 ;
+            grid-column: 1/2;
+        }*/
+       /* .item2{
+            property implementing on particular cell
+            align-self: start;
+            justify-self: end;
+        }*/
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>
