@@ -11,103 +11,105 @@
             box-sizing: border-box;
         }
         .container{
+            border: 10px solid black;
             height: 100vh;
             width: 100vw;
-            border: 10px solid black;
-            
         }
         .box{
             height: 80px;
             width: 250px;
+            background-color: blueviolet;
             border: 2px solid yellow;
-            background-color: purple;
-            border-radius: 10px;
             margin: 10px;
+            border-radius: 10px;
             position: relative;
-            animation-name:rightMovement ;
+            animation-name: rightMovement;
             animation-duration: 5s;
             animation-iteration-count: infinite;
-            /*animation-delay:3s ;*/
+            /*animation-delay: 3s;*/
             animation-timing-function: ease-in-out;
-            animation-direction: alternate;
-            /*animation-fill-mode: backwards;*/
+            animation-direction:alternate ;
+           /* animation-fill-mode:forwards;*/
+
         }
+
         @keyframes rightMovement {
             from{
-                top: 0px;
-                left: 0px;
+                top:0px;
+                left: 50px;
             }
             to{
-                top:0px;
-                left: 1000px;
+                top: 0px;
+                left:1000px;
             }
         }
 
         .box2{
             height: 80px;
             width: 250px;
+            background-color: blueviolet;
             border: 2px solid yellow;
-            background-color: purple;
-            border-radius: 10px;
             margin: 10px;
+            border-radius: 10px;
             position: relative;
-            animation-name:leftMovement ;
+            animation-name: leftMovement;
             animation-duration: 5s;
             animation-iteration-count: infinite;
             
             animation-timing-function: ease-in-out;
-            animation-direction: alternate;
+            animation-direction:alternate ;
             
         }
         @keyframes leftMovement {
             from{
-                top: 300px;
+                top:350px;
                 left: 1000px;
             }
             to{
-                top:300px;
-                left: 0px;
+                top:350px;
+                left:0px
             }
         }
         .circle{
             height: 70px;
             width: 70px;
             border: 2px solid yellow;
-            background-color: red;
+            background-color: brown;
             border-radius: 100%;
             margin: 10px;
-            top:30%;
-            left: 40%;
             position: relative;
-            animation-name:circleMovement ;
+            top: 30%;
+            left: 40%;
+            animation-name: circleMovement;
             animation-duration: 5s;
             animation-iteration-count: infinite;
-            
+
             animation-timing-function: ease-in-out;
             animation-direction: alternate;
-            /
+
         }
-        @keyframes circleMovement {
+        @keyframes circleMovement{
             0%{
                 top:1%;
                 left: 5%;
             }
             30%{
-                top:1%;
-                left:90%
+                top: 1%;
+                left: 90%;
             }
             60%{
                 top: 50%;
                 left: 10%;
             }
             100%{
-                top:50%;
+                top: 50%;
                 left: 90%;
             }
         }
 
-    </style>
+       
 
+    </style>
 </head>
 <body>
     <div class="container">
