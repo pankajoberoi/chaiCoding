@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* .box{
+            width: 100px;
+            height: 200px;
+            border: 5px solid black;
+            background-color: royalblue;
+            margin: 48px auto;
+            transition-duration: 2000ms;
+            transition-property:all;
+        }
+        .box:hover{
+            border-radius: 50%;
+            background-color: chocolate;
+            
+        }*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+        .parent:hover .child{
+            width: 100vw;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            transition-duration: 2s;
+            transition-delay: 3s;
+        }
+        .child1{
+            background-color: aqua;
+            transition-timing-function: linear;
+        }
+        .child2{
+            background-color: palegreen;
+            transition-timing-function: ease-in;
+        }
+        .child3{
+            background-color: blueviolet;
+            transition-timing-function: ease-out;
+        }
+        .child4{
+            background-color: tomato;
+            transition-timing-function: ease-in-out;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">Linear</div>
+        <div class="child child2">Ease in</div>
+        <div class="child child3">Ease out</div>
+        <div class="child child4">Ease in out</div>
+    </div>
+</body>
+</html>
