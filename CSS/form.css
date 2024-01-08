@@ -37,9 +37,9 @@ body{
     justify-content: space-between;
     padding: 20px 0px;
 }
-.user-input-box:nth-child(2n){
-    /* justify-content: end; */
-}
+/* .user-input-box:nth-child(2n){
+     justify-content: end; 
+} */
 .user-input-box{
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +116,7 @@ body{
     }
     .main-user-info{
         max-height: 380px;
-        overflow: auto;
+        overflow: scroll;
     }
     .main-user-info::-webkit-scrollbar{
         width: 0;
