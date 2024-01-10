@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            background-color: antiquewhite;
+            padding: 5rem;
+            display: flex;
+        }
+        .item{
+            padding: 2rem;
+            margin: 10px;
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+            border: 2px solid black;
+
+        }
+        #RotateX:hover{
+            transform: rotateX(45deg);
+        }
+        #RotateY:hover{
+            transform: rotateY(45deg);
+        }
+        #RotateZ:hover{
+            transform: rotateZ(45deg);
+        }
+        #TranslateX:hover{
+            transform: translateX(-100px);
+        }
+        #TranslateY:hover{
+            transform: translateY(100px);
+        }
+        #TranslateZ:hover{
+            transform: perspective(300px) translateZ(-100px);
+        }
+        #ScaleX:hover{
+            transform: scaleX(2);
+        }
+        #ScaleY:hover{
+            transform: scaleY(2);
+        }
+        #ScaleZ:hover{
+            transform:perspective(300px) scaleZ(2) rotateY(-30deg);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="RotateX">RotateX</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TranslateX</div>
+        <div class="item" id="TranslateY">TranslateY</div>
+        <div class="item" id="TranslateZ">TranslateZ</div>
+        <div class="item" id="ScaleX">ScaleX</div>
+        <div class="item" id="ScaleY">ScaleY</div>
+        <div class="item" id="ScaleZ">ScaleZ</div>
+    </div>
+</body>
+</html>
