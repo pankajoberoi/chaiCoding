@@ -8,36 +8,41 @@
         .container{
             border: 2px solid black;
             display: grid;
-            height: 1000px;
             grid-template-areas: "nav nav nav"
-                                "side article1 article2"
-                                "footer footer footer";
-
+                                 "side article1 article2"
+                                  "footer footer footer"  ;
         }
         .item{
-            font-size: 150px;
-            border: 2px solid red;
-            height: 250px;
+            font-size: 50px;
+            border: 2px solid black;
+            height: 50px;
             
         }
-        /*give every item background color*/
         .item1{
-                grid-area:nav;
+            grid-area: nav;
+            background-color: aqua;
         }
         .item2{
-           grid-area: side;
+            grid-area: side;
+            background-color: blue;
         }
         .item3{
-           grid-area: article1;
+            grid-area: article1;
+            background-color: blueviolet;
         }
         .item4{
-           grid-area: footer;
+            grid-area: footer;
+            background-color: brown;
         }
         .item5{
-            grid-area:article2;
+            grid-area: article2;
+            background-color: orange
         }
-
     </style>
+
+
+
+
 </head>
 <body>
     <div class="container">
