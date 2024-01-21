@@ -11,7 +11,7 @@
     <form action="hurray.html">
       <div>
         <label for="name">Name :</label>
-        <input type="text" id="name" placeholder="Your name"/>
+        <input type="text" id="name" placeholder="Your name" required/>
       </div><br>
 
       <div>
@@ -39,6 +39,25 @@
         <input type="radio" name="gender"/> Male <input type="radio" name="gender">Female
       </div><br>
 
+      <div>
+        <label for="check">Are u Eligible :  </label>
+        <input type="checkbox" id="check" checked />
+      </div><br>
+
+      <div>
+        <textarea name=""  cols="50" rows="5" placeholder="Your Feedback"></textarea>
+      </div><br>
+
+      <div>
+        <label for="">Job : </label>
+        <select>
+          <option>Google</option>
+          <option>Amazon</option>
+          <option>Microsoft</option>
+        </select>
+      </div><br>
+
+      <button type="reset">RESET</button>
       <button type="submit">SUBMIT</button>
     </form>
   </body>
