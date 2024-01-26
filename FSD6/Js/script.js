@@ -147,8 +147,8 @@ console.log("Welcome to fsd6");
 // task comparison ke sath how maths work
 
 
-let currentYear=2024;
+// let currentYear=2024;
 
-console.log(currentYear+=10 < (currentYear+=25));
+// console.log(currentYear+=10 < (currentYear+=25));
 
 
