@@ -8,6 +8,21 @@
   <body>
     <form action="databse.html">
       <div>
+        <label for="image">Image : </label>
+        <input type="file" id="image" accept=".png,.jpg,.pdf">
+      </div><br>
+      <div>
+        <label for="link">Portfolio link :</label>
+        <input type="url" id="link">
+      </div><br>
+      <div>
+        <label for="test">Difficulty : </label>
+        <input type="range" id="test" value="100">
+      </div><br>
+      <div>
+        <input type="hidden" value="Infosys">
+      </div>
+      <div>
         <label for="Name1">Name: </label>
         <input type="text" placeholder="Enter your name" id="Name1" />
       </div>
@@ -15,13 +30,18 @@
 
       <div>
         <label for="pass"> Password: </label>
-        <input type="password" placeholder="Your PassWord" id="pass" />
+        <input
+          type="password"
+          placeholder="Your PassWord"
+          id="pass"
+          maxlength="6"
+          minlength="4" />
       </div>
       <br />
 
       <div>
         <label for="mail">Email: </label>
-        <input type="email" placeholder="abc@gmail.com" id="mail"  />
+        <input type="email" placeholder="abc@gmail.com" id="mail" />
       </div>
       <br />
 
@@ -39,29 +59,36 @@
 
       <div>
         <label for="">Gender: </label>
-        <input type="radio" name="gender"> male <input type="radio" name="gender"> female
+        <input type="radio" name="gender" /> male
+        <input type="radio" name="gender" /> female
       </div>
       <br />
 
       <div>
-        <label for="">Are your eligible:  </label>
-        <input type="checkbox" checked>
+        <label for="">Are your eligible: </label>
+        <input type="checkbox" checked />
       </div>
       <br />
 
       <div>
-        <textarea name="Feedback"  cols="30" rows="7" placeholder="Feedback.."></textarea>
-      </div><br>
+        <textarea
+          name="Feedback"
+          cols="30"
+          rows="7"
+          placeholder="Feedback.."></textarea>
+      </div>
+      <br />
 
       <div>
         <label for="">Job : </label>
-        <select name="Placement" >
-            <option >Google</option>
-            <option >Microsoft</option>
-            <option >Amazon</option>
+        <select name="Placement">
+          <option>Google</option>
+          <option>Microsoft</option>
+          <option>Amazon</option>
         </select>
-      </div><br>
-
+      </div>
+      <br/>
+      
       <button type="reset">Reset</button>
       <button type="submit">Check-out</button>
     </form>
