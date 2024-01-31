@@ -1,4 +1,4 @@
-console.log("Welcome to fsd6");
+// console.log("Welcome to fsd6");
 
 // console.log("Hello world");
 
@@ -150,5 +150,66 @@ console.log("Welcome to fsd6");
 // let currentYear=2024;
 
 // console.log(currentYear+=10 < (currentYear+=25));
+
+// const markHeight=1.67;
+// const markWeight=78;
+
+// const JohnHeight=1.88;
+// const johnWeight=95;
+
+
+// const markBmi=markWeight/ (markHeight ** 2);
+
+// const johnBmi=johnWeight/  (JohnHeight ** 2);
+
+// console.log("Marks weight " + markWeight + " and is " + markHeight + "tall");
+
+// console.log("john weight " + johnWeight + " and is " + JohnHeight + " tall");
+
+
+// console.log("BMI of Mark is " + markBmi + " and BMI of John is  " + johnBmi);
+
+// const markHigherBmi= markBmi>johnBmi;
+
+// console.log(markHigherBmi);
+
+
+// strings with templates
+
+
+// const naam="vidhayak";
+// const job="software developer";
+// const birthYear=2003;
+// const year=2024;
+
+// const information="I am " + naam + " a "
+//  + job + " with age of " + (year - birthYear) + " ears old ";
+
+// console.log(information);
+
+// const newInfo=`I am ${naam} a 
+// ${job} with age of ${(year-birthYear)} years old ${2+2}`;
+
+// console.log(newInfo);
+
+
+// conditional statements 
+
+// const age=15;
+
+// if( age >= 18){
+//     console.log("Hey there your are eligible for license")
+// }
+// else{
+//     const yearLeft=`wait for next ${18-age} years`;
+//     console.log(yearLeft);
+    
+// }
+
+
+
+
+
+
 
 
