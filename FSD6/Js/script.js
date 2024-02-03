@@ -206,6 +206,22 @@
     
 // }
 
+const calAge=function(birthYear)
+{
+    const age=[];
+    for(var i of birthYear){
+        age.push(2024-i);
+    }
+    return age;
+    
+}
+
+const birthYear=[1990,2001,1991];
+
+// console.log(calAge(birthYear)); 
+const age=calAge(birthYear);
+
+console.log(age);
 
 
 
