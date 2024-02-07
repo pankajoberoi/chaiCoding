@@ -206,22 +206,136 @@
     
 // }
 
-const calAge=function(birthYear)
-{
-    const age=[];
-    for(var i of birthYear){
-        age.push(2024-i);
-    }
-    return age;
+// const calAge=function(birthYear)
+// {
+//     const age=[];
+//     for(var i of birthYear){
+//         age.push(2024-i);
+//     }
+//     return age;
+    
+// }
+
+// const birthYear=[1990,2001,1991];
+
+// // console.log(calAge(birthYear)); 
+// const age=calAge(birthYear);
+
+// console.log(age);
+
+
+// type conversion manually
+
+// console.log("hello is am " + 23 + " years old ");
+
+// console.log(22+23);
+
+
+// const inputYear='1990';
+// console.log(inputYear + 18);
+
+
+
+// console.log(Number(inputYear)+18);
+
+// console.log(typeof NaN);
+
+
+
+// console.log('I have ' + 2 + ' years of experience' )
+
+// console.log('23' + '10' + 3 );
+
+// console.log('hello'*'world');
+
+// let n = '1' + 1;
+// console.log(n);
+// n=n-1;
+// console.log(n);
+
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+
+// console.log(Boolean("Pankaj"));
+// console.log(Boolean([]))
+
+
+// let money=0;
+
+// if(money){
+//     console.log("you can shop")
+// }
+// else{
+//     console.log("udhaar mangle");
+// }
+
+// == vs ===
+// const age='18';
+
+// if(age==18){
+//     console.log("your an an adult")
+// }
+
+// let age=Number(prompt("Enter your age"));
+// console.log(age);
+
+// if(age===18){
+//     console.log("beyaah hua hai tumhara");
+// }
+// else if(age===23){
+//     console.log("Beyaah nhi hogga tumhara")
+// }
+// else{
+//     console.log("udit ho kya ")
+// }
+
+// Boolean operators And Or Not
+
+
+// const hasDriverLicense=true;
+// const hasGoodVision=true;
+
+// console.log(hasDriverLicense && hasGoodVision);
+// console.log(hasDriverLicense || hasGoodVision);
+// console.log(!hasDriverLicense);
+
+// if(hasDriverLicense && hasGoodVision){
+//     console.log("you can drive");
+// }
+// else if(hasDriverLicense || hasGoodVision){
+//     console.log("cycle dedi")
+// }
+// else{
+//     console.log("paidal hi chal");
+// }
+
+let day=prompt("day?");
+
+switch(day){
+    case'monday':
+        console.log("chest & triceps");
+        break;
+    case'tuesday':
+        console.log("back & biceps");
+        break;
+    case'wednesday':
+    case'thursday':
+        console.log("rest");
+        break;
+    case'friday':
+        console.log("mix");
+        break;
+    case'saturday':
+        console.log("legs");
+        break;
+    default:
+        console.log("ajj chutti hai");
     
 }
 
-const birthYear=[1990,2001,1991];
 
-// console.log(calAge(birthYear)); 
-const age=calAge(birthYear);
-
-console.log(age);
 
 
 
