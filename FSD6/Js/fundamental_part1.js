@@ -311,35 +311,50 @@
 //     console.log("paidal hi chal");
 // }
 
-let day=prompt("day?");
+// let day=prompt("day?");
 
-switch(day){
-    case'monday':
-        console.log("chest & triceps");
-        break;
-    case'tuesday':
-        console.log("back & biceps");
-        break;
-    case'wednesday':
-    case'thursday':
-        console.log("rest");
-        break;
-    case'friday':
-        console.log("mix");
-        break;
-    case'saturday':
-        console.log("legs");
-        break;
-    default:
-        console.log("ajj chutti hai");
+// switch(day){
+//     case'monday':
+//         console.log("chest & triceps");
+//         break;
+//     case'tuesday':
+//         console.log("back & biceps");
+//         break;
+//     case'wednesday':
+//     case'thursday':
+//         console.log("rest");
+//         break;
+//     case'friday':
+//         console.log("mix");
+//         break;
+//     case'saturday':
+//         console.log("legs");
+//         break;
+//     default:
+//         console.log("ajj chutti hai");
     
-}
+// }
+
+// expressions vs statements
 
 
+// let birthYear=2000;
+// let age=2024-birthYear;
+
+// if(age>=18){
+//     console.log("you are an adult");
+//     console.log("you can drive as well")
+// }
+
+// console.log(`my age is ${age}`);
+
+// const age=20;
+
+// age>=18   ? true  : false   ;
+
+// const drink = age>=18 ? 'Wine' : 'water';
+
+// console.log(drink);
 
 
-
-
-
-
-
+// console.log(`I like to drink ${age>=18 ? 'Wine' : 'water'}`)
