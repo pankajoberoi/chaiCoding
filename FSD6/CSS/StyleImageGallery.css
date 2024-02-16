@@ -93,8 +93,7 @@ body{
 .h-6{
     grid-row: span 6;
 }
-
-/* @media screen and (max-width:500px) {
+ @media screen and (max-width:500px) {
     .container{
         grid-template-columns: repeat(1,1fr);
     }
@@ -113,4 +112,4 @@ body{
     100%{
         top: 50%;
     }
-} */
+} 

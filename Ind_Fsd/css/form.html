@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantasy Quest Registration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: inline;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input[type="file"] {
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Fantasy Quest Registration</h2>
+  <form action="#" method="post">
+    <!-- Personal Information Section -->
+    <div class="form-group">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+    </div>
+    <div class="form-group">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </div>
+    <!-- Contact Information Section -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    <!-- Account Setup Section -->
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="8" required>
+    </div>
+    <!-- Adventure Preferences Section -->
+    <div class="form-group">
+      <label for="weapon">Choose Your Weapon:</label>
+      <select id="weapon" name="weapon">
+        <option value="Sword">Sword</option>
+        <option value="Bow">Bow</option>
+        <option value="Staff">Staff</option>
+        <option value="Axe">Axe</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Select Your Armor:</label><br>
+      <input type="radio" id="leather" name="armor" value="Leather Armor">
+      <label for="leather">Leather Armor</label><br>
+      <input type="radio" id="chainmail" name="armor" value="Chainmail Armor">
+      <label for="chainmail">Chainmail Armor</label><br>
+      <input type="radio" id="plate" name="armor" value="Plate Armor">
+      <label for="plate">Plate Armor</label>
+    </div>
+    <div class="form-group">
+      <label for="experience">Describe Your Adventuring Experience:</label>
+      <textarea id="experience" name="experience" rows="4"></textarea>
+    </div>
+    <!-- Quest Details Section -->
+    <div class="form-group">
+      <label for="location">Quest Location:</label>
+      <input type="text" id="location" name="location">
+    </div>
+    <div class="form-group">
+      <label for="travel-date">Preferred Travel Date:</label>
+      <input type="date" id="travel-date" name="travel-date">
+    </div>
+    <!-- Additional Information Section -->
+    <div class="form-group">
+      <label for="hear-about">How did you hear about the quest?</label>
+      <select id="hear-about" name="hear-about" multiple>
+        <option value="Friend">Friend</option>
+        <option value="Social Media">Social Media</option>
+        <option value="Advertisement">Advertisement</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="updates" name="updates">
+      <label for="updates">Would you like to receive quest updates via messenger hawk?</label>
+    </div>
+    <!-- Terms and Conditions Section -->
+    <div class="form-group">
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">I agree to the quest rules and regulations</label>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
