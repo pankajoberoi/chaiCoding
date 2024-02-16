@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            height: 90vh;
+            grid-template-areas: "nav nav nav "
+                                 "side article img" 
+                                 "foot foot foot";
+
+        }
+        .item{
+            font-size: 50px;
+            border: 2px solid black;
+        }
+        .item1{
+            background-color: brown;
+            grid-area: nav;
+        }
+        .item2{
+            background-color: violet;
+            grid-area: side;
+        }
+        .item3{
+            background-color: green;
+            grid-area: article;
+        }
+        .item4{
+            background-color: blue;
+            grid-area: foot;
+        }
+        .item5{
+            background-color: aqua;
+            grid-area: img;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">navbar</div>
+        <div class="item item2">side section</div>
+        <div class="item item3">article</div>
+        <div class="item item4">footer</div>
+        <div class="item item5">img</div>
+      </div>
+</body>
+</html>

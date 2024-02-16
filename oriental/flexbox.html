@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 90vh;
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        font-size: 60px;
+      }
+      #div1 {
+        background-color: coral;
+      }
+      #div2 {
+        background-color: cadetblue;
+        /*align-self: center;*/
+        /*flex-grow: 2;*/
+      }
+      #div3 {
+        background-color: crimson;
+        /*align-self: start;*/
+        flex-shrink: 3;
+      }
+      #div4 {
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="div1">1</div>
+      <div class="box" id="div2">2</div>
+      <div class="box" id="div3">3</div>
+      <div class="box" id="div4">4</div>
+    </div>
+  </body>
+</html>
