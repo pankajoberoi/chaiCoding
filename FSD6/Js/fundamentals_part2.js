@@ -95,6 +95,98 @@
 // let glass=fruitProcessor(2,4);
 // console.log(glass);
 
+// const calAvg= (a,b,c)=>(a+b+c)/3;
+// // console.log(calAvg);
+// const csk=calAvg(144,164,85);
+// const Mi=calAvg(65,54,49);
+
+// const checkWinner=function(team1,team2){
+//     if(team1 > team2 * 2){
+//         console.log(`team1 ${team1} is the winner`);
+//     }
+//     else if(team2 > team1 *2){
+//         console.log(`team2 ${team2} is the winner`);
+//     }
+//     else{
+//         console.log("Draw!!!!!!")
+//     }
+// }
+
+// checkWinner(Mi,csk);
+
+// const friend1="Pankaj";
+// const friend2="ANu";
+// const friend3="john";
+
+
+
+// const friends=['Pankaj','ANu','john'];
+// console.log(friends);
+
+// console.log(friends[1]);
+
+// console.log(friends.length);
+
+// console.log(friends.length-1);
+
+// friends[2]='Jay';
+// console.log(friends);
+
+// // friends=['shivang','udit','rahul'];
+
+// const person=["Pankaj",23,50.25,'$',(2024-2001),false,friends];
+// console.log(person);
+
+const calAge=function(birthYear){
+    return 2024-birthYear;
+}
+
+const years=[2001,1990,1995];
+const currentAge=[];
+
+currentAge.push(calAge(years[0]))
+currentAge.push(calAge(years[1]))
+currentAge.push(calAge(years[2]))
+
+console.log(currentAge)
+
+const friends=['pankaj','Ayan','vinayat',years];
+// console.log(friends.length);
+friends.push('priyanka');
+const newlength=friends.push();
+console.log(newlength);
+console.log(friends);
+
+friends.unshift("udit");
+console.log(friends);
+
+friends.pop();
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+
+console.log(friends.indexOf('Ayan'));
+friends.push("24");
+
+console.log(friends);
+
+console.log(friends.includes(24));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
