@@ -51,7 +51,7 @@ body{
 
 .gallery-item:hover .text{
     opacity: 1;
-    animation: move-down .5s linear;
+    animation: move-down 2s linear;
     padding: 1em;
     width: 100%;
 }

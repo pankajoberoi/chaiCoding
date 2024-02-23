@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 5px solid black;
+        background-color: blue;
+        display: flex;
+        transition: all 4s ease-in-out ;
+      }
+      .text {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .box:hover {
+        background-color: red;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+      }
+      /*.parent:hover .child{
+            width: 100vw;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            transition-duration: 3s;
+        }
+        .child1{
+            background-color: green;
+            transition-timing-function: linear;
+        }
+        .child2{
+            background-color: red;
+            transition-timing-function: ease-in;
+        }
+        .child3{
+            background-color: plum;
+            transition-timing-function: ease-out
+        }
+        .child4{
+            background-color: teal;
+            transition-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55)
+        }*/
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="text">chaliye shuru karte hai</div>
+    </div>
+    <!-- <div class="parent">
+        <div class="child child1">Linear</div>
+        <div class="child child2">Ease in</div>
+        <div class="child child3">Ease out</div>
+        <div class="child child4">Cubic bezier</div>
+    </div> -->
+  </body>
+</html>

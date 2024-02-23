@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*.box {
+        height: 400px;
+        width: 400px;
+        background-color: skyblue;
+        border: 2px solid black;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s linear;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box:hover {
+        transform: rotate(-180deg);
+        transform: scale(0.2);
+        transform: skew(-45deg);
+        transform: translate(500px,200px);
+      }*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background-color: aqua;
+        padding: 5rem;
+        display: flex;
+      }
+      .item {
+        font-size: 25px;
+        color: #fff;
+        padding: 2rem;
+        margin: 10px;
+        height: 150px;
+        width: 150px;
+        background-image: linear-gradient(blue, violet);
+        border: 2px solid black;
+        transition: all linear 1.5s;
+      }
+      #RotateX:hover {
+        transform: rotateX(45deg);
+      }
+      #RotateY:hover {
+        transform: rotateY(90deg);
+      }
+      #RotateZ:hover {
+        transform: rotateZ(90deg);
+      }
+      #TranslateX:hover {
+        transform: translateX(-100px);
+      }
+      #TranslateY:hover {
+        transform: translateY(-100px);
+      }
+      #TranslateZ:hover {
+        transform: perspective(300px) translateZ(-100px);
+      }
+      #ScaleX:hover {
+        transform: scaleX(1.5);
+      }
+      #ScaleY:hover {
+        transform: scaleY(0.5);
+      }
+      #ScaleZ:hover {
+        transform: perspective(300px) scaleZ(2) rotateY(30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="box">
+        <p>welcome to fsd10</p>
+      </div> -->
+      <div class="item" id="RotateX">RotateX</div>
+      <div class="item" id="RotateY">RotateY</div>
+      <div class="item" id="RotateZ">RotateZ</div>
+      <div class="item" id="TranslateX">TranslateX</div>
+      <div class="item" id="TranslateY">TranslateY</div>
+      <div class="item" id="TranslateZ">TranslateZ</div>
+      <div class="item" id="ScaleX">ScaleX</div>
+      <div class="item" id="ScaleY">ScaleY</div>
+      <div class="item" id="ScaleZ">ScaleZ</div>
+    </div>
+  </body>
+</html>

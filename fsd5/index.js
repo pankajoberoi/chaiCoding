@@ -1,5 +1,6 @@
 
 const math=require("./math")
+
 // const {addFn,subFn}=require("./math")
 
 

@@ -137,42 +137,90 @@
 // const person=["Pankaj",23,50.25,'$',(2024-2001),false,friends];
 // console.log(person);
 
-const calAge=function(birthYear){
-    return 2024-birthYear;
-}
+// const calAge=function(birthYear){
+//     return 2024-birthYear;
+// }
 
-const years=[2001,1990,1995];
-const currentAge=[];
+// const years=[2001,1990,1995];
+// const currentAge=[];
 
-currentAge.push(calAge(years[0]))
-currentAge.push(calAge(years[1]))
-currentAge.push(calAge(years[2]))
+// currentAge.push(calAge(years[0]))
+// currentAge.push(calAge(years[1]))
+// currentAge.push(calAge(years[2]))
 
-console.log(currentAge)
+// console.log(currentAge)
 
-const friends=['pankaj','Ayan','vinayat',years];
-// console.log(friends.length);
-friends.push('priyanka');
-const newlength=friends.push();
-console.log(newlength);
-console.log(friends);
+// const friends=['pankaj','Ayan','vinayat',years];
+// // console.log(friends.length);
+// friends.push('priyanka');
+// const newlength=friends.push();
+// console.log(newlength);
+// console.log(friends);
 
-friends.unshift("udit");
-console.log(friends);
+// friends.unshift("udit");
+// console.log(friends);
 
-friends.pop();
-console.log(friends);
+// friends.pop();
+// console.log(friends);
 
-friends.shift();
-console.log(friends);
+// friends.shift();
+// console.log(friends);
 
 
-console.log(friends.indexOf('Ayan'));
-friends.push("24");
+// console.log(friends.indexOf('Ayan'));
+// friends.push("24");
 
-console.log(friends);
+// console.log(friends);
 
-console.log(friends.includes(24));
+// console.log(friends.includes(24));
+
+
+const person= {
+    firstName:"Pankaj",
+    lastName:"oberoi",
+    age:2024-2001,
+    job:"Trainer",
+    salary:10000,
+    friend:["harsh" ,"udit", "Diksha"]
+};
+
+// const arr=[person,person,person]
+
+// console.log(arr);
+console.log(person);
+
+//dot vs bracket
+
+// console.log(person.firstName);
+// console.log(person.age);
+// console.log(person.friend[1]);
+
+// console.log(person['lastName']);
+
+// console.log(person['friend']);
+
+// const nameKey='Name';
+// console.log(person['first' + nameKey]);
+
+
+
+// const interedIn=prompt(" I have firstName , lastName , age , job  and salary  tell me what u want ");
+
+
+
+// if(person[interedIn]){
+//     console.log(person[interedIn])
+// }
+// else{
+//     console.log("invalid request!!");
+// }
+
+
+
+person.location="Chandighar"
+
+person['insta']="123@gmail.com"
+
 
 
 
