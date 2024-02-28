@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 20px solid red;
+        height: 100vh;
+        width: 100vw;
+      }
+      .box {
+        height: 100px;
+        width: 250px;
+        background-color: blueviolet;
+        border: 2px solid black;
+        border-radius: 10px;
+        position: relative;
+        animation-name: rightMovement;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /*animation-delay: 2s;*/
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+      @keyframes rightMovement {
+        from {
+          top: 0px;
+          left: 50px;
+        }
+        to {
+          top: 0px;
+          left: 1400px;
+        }
+      }
+      .box2 {
+        height: 100px;
+        width: 250px;
+        background-color: blueviolet;
+        border: 2px solid black;
+        border-radius: 10px;
+        position: relative;
+        animation-name: leftMovement;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        /*animation-delay: 2s;*/
+        animation-direction: alternate-reverse;
+        animation-timing-function: linear;
+      }
+      @keyframes leftMovement {
+        from {
+          top: 400px;
+          left: 50px;
+        }
+        to {
+          top: 400px;
+          left: 1400px;
+        }
+      }
+      .ball {
+        height: 70px;
+        width: 70px;
+        border: 2px solid black;
+        background-color: red;
+        border-radius: 100%;
+        margin: 5px;
+        position: relative;
+        top: 30%;
+        left: 45%;
+        animation-name: circleMovement;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+      }
+      @keyframes circleMovement {
+        0% {
+          top: 1%;
+          left: 5%;
+        }
+        30% {
+          top: 1%;
+          left: 90%;
+        }
+        60% {
+          top: 50%;
+          left: 5%;
+        }
+        100% {
+          top: 50%;
+          left: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="ball"></div>
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>

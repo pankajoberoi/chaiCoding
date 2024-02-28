@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typewriter Animation</title>
+    <style>
+      .typewriter {
+        overflow: hidden; /* Hide overflow text */
+      }
+
+      .text {
+        opacity: 0; /* Hide text initially */
+        animation: typing 5s infinite alternate steps(40); /* Adjust timing and steps for desired effect */
+      }
+
+      @keyframes typing {
+        from {
+          width: 100px; /* Start with no width */
+        }
+        to {
+          opacity: 1; /* Gradually reveal text */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="typewriter">
+      <p class="text">This is a typewriter animation.</p>
+    </div>
+  </body>
+</html>
