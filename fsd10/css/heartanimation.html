@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .heart {
+        animation: beat 1 ease-in infinite alternate;
+      }
+      @keyframes beat {
+        from {
+          scaleX: 1;
+        }
+        to {
+          scaleX: 1.2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="heart" src="heart.png" alt="" height="200" width="200px" />
+    </div>
+  </body>
+</html>

@@ -3,30 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Typewriter Animation</title>
+    <title>Document</title>
     <style>
-      .typewriter {
-        overflow: hidden; /* Hide overflow text */
+      .typeWriter {
+        overflow: hidden;
       }
-
       .text {
-        opacity: 0; /* Hide text initially */
-        animation: typing 5s infinite alternate steps(40); /* Adjust timing and steps for desired effect */
+        opacity: 0;
+        animation: typing 5s infinite alternate;
       }
-
       @keyframes typing {
         from {
-          width: 100px; /* Start with no width */
+          width: 0;
         }
         to {
-          opacity: 1; /* Gradually reveal text */
+          opacity: 1;
+          color: brown;
         }
       }
     </style>
   </head>
   <body>
-    <div class="typewriter">
-      <p class="text">This is a typewriter animation.</p>
+    <div class="typeWriter">
+      <p class="text">This is a Animation</p>
     </div>
   </body>
 </html>

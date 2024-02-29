@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 400px;
+        width: 400px;
+        background-color: aqua;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        transition: all 3s linear;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box:hover {
+        /*transform: rotate(-90deg);*/
+        /* transform: scale(0.5);*/
+        /*transform: skew(-45deg);*/
+        transform: translate(-200px, -100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>Welcome to fsd ind</p>
+      </div>
+    </div>
+  </body>
+</html>

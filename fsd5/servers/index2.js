@@ -4,7 +4,7 @@ const fs=require("fs")
 const url=require("url")
 
 const myServer=http.createServer((req,res)=>{
-    const log=`\n ${Date.now()}: ${req.url} new request received \n `
+    const log=`\n ${Date.now()}: ${req.method} ${req.url} new request received \n `
     const myurl=url.parse(req.url,true)
     console.log(myurl)
     if(req.url === '/favicon.ico'){
@@ -13,10 +13,13 @@ const myServer=http.createServer((req,res)=>{
     fs.appendFile("log.txt", log ,(err,data)=>{
         switch(myurl.pathname){
             case '/':
-                res.end("HomePage")
+                if(req.method === 'GET'){
+                    res.end("HomePage")
+                }
                 break;
             case '/about':
                 const username=myurl.query.myname
+
                 res.end(`Hi ${username}`)
                 break;
             case '/contact':
@@ -28,6 +31,16 @@ const myServer=http.createServer((req,res)=>{
             case '/search':
                 const search=myurl.query.search_query
                 res.end("here are your results " + search);
+                break;
+            case '/signup':
+                if(req.method==='GET')
+                res.end("this i am form component of html")
+                if(req.method==="POST") {
+                    //db query
+                    res.end("success");
+                }
+                break;
+
             default:
                 res.end("404 not found!!!")
         }
@@ -46,4 +59,7 @@ myServer.listen(8000,()=>{
 
 
 // https://www.youtube.com/watch?v=eD16g9RRKtw
+
+
+// http://localhost:8000/about?myname=pankaj&userId=1
 

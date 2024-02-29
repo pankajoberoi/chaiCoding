@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Animation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .pulse {
+        width: 100px; /* Initial width */
+        height: 100px; /* Initial height */
+        background-color: #3498db; /* Initial background color */
+        animation: pulseAnimation 2s infinite alternate; /* Adjust duration and animation type as needed */
+      }
+
+      @keyframes pulseAnimation {
+        0% {
+          transform: scale(1); /* Start with normal size */
+        }
+        100% {
+          transform: scale(1.2); /* Scale up to 1.2 times original size */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pulse"></div>
+  </body>
+</html>

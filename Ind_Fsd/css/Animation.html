@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 10px solid red;
+        height: 100vh;
+        width: 100vw;
+      }
+      .box {
+        height: 80px;
+        width: 250px;
+        background-color: blueviolet;
+        border: 4px solid black;
+        margin: 10px;
+        border-radius: 10px;
+        position: relative;
+        animation-name: rightMovement;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes rightMovement {
+        from {
+          top: 0px;
+          left: 0px;
+        }
+        to {
+          top: 0px;
+          left: 1000px;
+        }
+      }
+      .box2 {
+        height: 80px;
+        width: 250px;
+        background-color: blueviolet;
+        border: 4px solid black;
+        margin: 10px;
+        border-radius: 10px;
+        position: relative;
+        animation-name: leftmovement;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+      }
+      @keyframes leftmovement {
+        from {
+          top: 270px;
+          left: 0px;
+        }
+        to {
+          top: 270px;
+          left: 1000px;
+        }
+      }
+      .ball {
+        height: 70px;
+        width: 70px;
+        border: 2px solid black;
+        background-color: brown;
+        border-radius: 100%;
+        margin: 5px;
+        position: relative;
+        animation-name: ballMove;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+      }
+      @keyframes ballMove {
+        0% {
+          top: 1%;
+          left: 5%;
+        }
+        30% {
+          top: 1%;
+          left: 90%;
+        }
+        60% {
+          top: 50%;
+          left: 5%;
+        }
+        100% {
+          top: 50%;
+          left: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="ball"></div>
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>
