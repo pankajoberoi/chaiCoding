@@ -299,26 +299,23 @@
 
 // PrintOnlyString(student);
 
-let gameNum = prompt("Give Your Friend a Number to guess");
-let userNum = prompt("guess the correct number");
-let count=0;
+// let gameNum = prompt("Give Your Friend a Number to guess");
+// let userNum = prompt("guess the correct number");
+// let count = 0;
 
-while (userNum != gameNum) {
+// while (userNum != gameNum) {
+//   if (userNum > gameNum) {
+//     userNum = prompt("Number is greater then actuall, guess it again");
+//     console.log("its greater");
+//   } else if (userNum < gameNum) {
+//     userNum = prompt("Number is smaller then actuall, guess it again");
+//     console.log("its smaller");
+//   } else if (userNum == gameNum) {
+//     console.log("khatam");
+//     alert("coonngooooo!!!!");
+//     break;
+//   }
 
-    if(userNum>gameNum){
-        userNum = prompt("Number is greater then actuall, guess it again");
-    }
-    else if(userNum<gameNum){
-        userNum = prompt("Number is smaller then actuall, guess it again");
-    }
-    else if(userNum==gameNum){
-        alert("coonngooooo!!!!");
-        break;
-    }
-
-    count++;
-  
-}
-console.log("Total Number of attempts!!")
-
-
+//   count++;
+// }
+// console.log("Total Number of attempts!!" + count);
