@@ -1,0 +1,14 @@
+REST API -> Json data
+
+get / api/user -> list of all users
+
+
+get / api/user/1
+get / api/user/2 - particular object ko lekar aunga
+
+
+post / api/user -> create new users
+
+patch / api/user/1 -> edit
+
+delete / api/user/1 -> delete
