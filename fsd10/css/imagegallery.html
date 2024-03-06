@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="imagegallery.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .navbar {
+        background-color: black;
+        display: flex;
+        height: 55px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 24px;
+        margin-bottom: 15px;
+      }
+      .navlink {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: #f26a3e;
+        font-weight: 900;
+      }
+      .inner-navbar {
+        display: flex;
+        justify-content: center;
+      }
+      .inner-navlink {
+        color: #fff;
+        padding: 0px 16px;
+        font-size: 1.3rem;
+        text-decoration: none;
+      }
+      .btn {
+        color: #fff;
+        text-decoration: none;
+        background-color: #f26a3e;
+        font-size: 1.3rem;
+        padding: 4px 16px;
+        border-radius: 5px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      @media (max-width: 720px) {
+        .navbar {
+          flex-direction: column;
+          height: auto;
+          text-align: center;
+          padding: 0;
+        }
+        .navlink {
+          width: 100%;
+          border-bottom: 1px solid gray;
+          padding: 8px 0px;
+        }
+        .inner-navbar {
+          flex-direction: column;
+          text-align: center;
+          width: 80%;
+        }
+        .inner-navlink {
+          border-bottom: 1px solid gray;
+          padding: 8px 0px;
+        }
+        .btn {
+          width: 50%;
+          padding: 8px 0px;
+          margin-top: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="navlink">Coding Thinkers</a>
+      <div class="inner-navbar">
+        <a href="#" class="inner-navlink">Home</a>
+        <a href="#" class="inner-navlink">About</a>
+        <a href="#" class="inner-navlink">Support</a>
+        <a href="#" class="inner-navlink">contact</a>
+      </div>
+      <a href="#" class="btn">Login</a>
+    </div>
+
+    <div class="container">
+      <div class="gallery-container w3 h2">
+        <!-- album height width-->
+        <div class="gallery-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?nature" alt="" />
+          </div>
+          <div class="text">Nature</div>
+        </div>
+      </div>
+
+      <div class="gallery-container w3 h3">
+        <div class="gallery-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?people" alt="" />
+          </div>
+          <div class="text">People</div>
+        </div>
+      </div>
+
+      <div class="gallery-container h2">
+        <div class="gallery-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?sports" alt="" />
+          </div>
+          <div class="text">Sports</div>
+        </div>
+      </div>
+
+      <div class="gallery-container w2">
+        <div class="gallery-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?fitness" alt="" />
+          </div>
+          <div class="text">fitness</div>
+        </div>
+      </div>
+
+      <div class="gallery-container w4">
+        <div class="gallery-item">
+          <div class="image">
+            \ <img src="https://source.unsplash.com/1600x900/?food" alt="" />
+          </div>
+          <div class="text">food</div>
+        </div>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <div class="image">
+            <img src="https://source.unsplash.com/1600x900/?travel" alt="" />
+          </div>
+          <div class="text">Travel</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form"></div>
+
+    <div class="footer"></div>
+  </body>
+</html>
