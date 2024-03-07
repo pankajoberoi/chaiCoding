@@ -1,55 +1,46 @@
-// let btn1=document.querySelector("#btn1");
+let button = document.querySelector("#btn1");
 
-// btn1.onclick = ()=>{
-//     console.log("btn1 clicked");
-//     let salary=10000;
-//     salary=salary+1000
-//     console.log(salary);
-// }
+// button.onclick = () => {
+//   console.log("bonus button is clicked");
+//   let salary = 10000;
+//   salary = salary + 1000;
+//   alert("my final salary after bonus is" + salary);
+// };
 
-// let box=document.querySelector(".dba1")
+// let passBox = document.querySelector("#dabba1");
 
-// box.onmouseover=()=>{
-//     console.log("parking not aloud")
-// }
+// passBox.onmouseover = () => {
+//   let pass = prompt("enter the valid key to access password ki file");
+//   if (pass == "ram") {
+//     alert("you can access this file!");
+//   }
+// };
 
-// btn1= onclick =(e)=>{
-//     console.log(e)
-//     console.log(e.type);
-//     console.log(e.target);
-//     // same for mouseOver
-
-// }
-
-// btn1.addEventListener("click",(e)=>{
-//     console.log("button1 was clicked")
-//     console.log(e)//optional
-// });
-// btn1.addEventListener("click",()=>{
-//     console.log("button1 was clicked returns")
-// });
-
-// const handler3=()=>{
-//     console.log("button1 was clicked returns 2")
-// }
-// btn1.addEventListener("click",handler3);
-// btn1.addEventListener("click",()=>{
-//     console.log("button1 was clicked returns 4")
-// });
+// button.onclick = (evt) => {
+//     console.log(evt);
+//     console.log(evt.type)
+//     console.log(evt.target)
+// };
 
 
-// btn1.removeEventListener("click",handler3)
+// button.addEventListener("click",()=>{
+//     console.log("button is clicked")//fn1
+// })
+// button.addEventListener("click",()=>{
+//     alert("thanks for visiting")//fn2
+// })
+// button.addEventListener("click",()=>{
+//     console.log("function3 is also added")//fn3
+// })
 
-let modebtn=document.querySelector("#mode");
-let currMode="light";
 
-modebtn.addEventListener("click",()=>{
-    if(currMode==='light'){
-        currMode="dark";
-        document.querySelector("body").style.backgroundColor="black"
-    }else{
-        currMode="light"
-        document.querySelector("body").style.backgroundColor="white"
-    }
-    console.log(currMode)
+button.addEventListener("click",()=>{
+    console.log("helloooo fn 1");
 })
+
+button.addEventListener("dblclick",()=>{
+    alert("hiiiiiii!!!!!!")
+})
+
+
+

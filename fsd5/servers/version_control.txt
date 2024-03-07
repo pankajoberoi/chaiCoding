@@ -1,0 +1,11 @@
+"^4.18.2" version control -> github
+
+1st ->4 mojor release (new project)
+2nd -> 18 recomended changes (security) (bug fix)
+3rd -> 2 minor changes(HTTP)(optional)
+
+^ -> auto install 
+~ ->auto install
+
+
+Rest API

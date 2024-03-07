@@ -2,7 +2,7 @@
 const http=require("http")
 const express=require("express")
 
-const app=express()
+const app=express()//instance
 
 // http://localhost:8000/about?myname=pankaj&userId=1
 app.get("/",(req,res)=>{
