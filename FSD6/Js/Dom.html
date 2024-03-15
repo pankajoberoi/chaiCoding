@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      span {
+      #section {
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
       }
     </style>
   </head>
@@ -27,7 +31,9 @@
 
     <!-- <h1>Jai shree ram</h1> -->
 
-    <a href="https://www.google.com/">Google babba</a>
+    <!-- <a href="https://www.google.com/">Google babba</a> -->
+
+    <div id="section"></div>
 
     <script>
       /*selectors*/
@@ -60,15 +66,19 @@
       const e2 = document.querySelector("p");
       console.log(e2.textContent);*/
 
-   /* const heading=document.querySelector('h1')
+      /* const heading=document.querySelector('h1')
     heading.innerText='Jai mata dii'*/
 
-    const link=document.querySelector("a");
+      /*const link=document.querySelector("a");
     console.log(link.getAttribute('href'));
 
     const newLink=document.querySelector("a")
-    newLink.setAttribute('href','https://in.search.yahoo.com/?fr2=inr')
+    newLink.setAttribute('href','https://in.search.yahoo.com/?fr2=inr')*/ $;
 
+      const section = document.getElementById("section");
+      const heading = document.createElement("h1");
+      heading.innerText = "jai shree ram";
+      section.appendChild(heading);
     </script>
   </body>
 </html>

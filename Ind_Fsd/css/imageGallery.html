@@ -1,65 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="imagegallery.css">
-</head>
-<body>
-    <h1>Google Photos</h1>
-    <div class="container"><!-- grid -->
-
-        <div class="gallery-container"><!-- height and width -->
-            <div class="gallery-items">
-                <div class="img"><img src="people.jpg" alt=""></div>
-                <div class="text">People</div>
-            </div>
+    <link rel="stylesheet" href="imagegallery.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          }
+          .navbar {
+            background-color: black;
+            display: flex;
+            height: 55px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 24px;
+            margin-bottom: 10px;
+          }
+          .navlink {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #f26a3e;
+            font-weight: 900;
+          }
+          .inner-navbar {
+            display: flex;
+            justify-content: center;
+          }
+          .inner-navlink {
+            color: #fff;
+            padding: 0px 16px;
+            font-size: 1.3rem;
+            text-decoration: none;
+          }
+          .btn {
+            color: #fff;
+            text-decoration: none;
+            background-color: #f26a3e;
+            font-size: 1.3rem;
+            padding: 4px 16px;
+            border-radius: 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          @media (max-width: 720px) {
+            .navbar {
+              flex-direction: column;
+              height: auto;
+              text-align: center;
+              padding: 0;
+            }
+            .navlink {
+              width: 100%;
+              border-bottom: 1px solid gray;
+              padding: 8px 0px;
+            }
+            .inner-navbar {
+              flex-direction: column;
+              text-align: center;
+              width: 80%;
+            }
+            .inner-navlink {
+              border-bottom: 1px solid gray;
+              padding: 8px 0px;
+            }
+            .btn {
+              width: 50%;
+              padding: 8px 0px;
+              margin-top: 8px;
+            }
+          }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="#" class="navlink">Coding Thinkers</a>
+        <div class="inner-navbar">
+          <a href="#" class="inner-navlink">Home</a>
+          <a href="#" class="inner-navlink">About</a>
+          <a href="#" class="inner-navlink">Support</a>
+          <a href="#" class="inner-navlink">contact</a>
         </div>
+        <a href="#" class="btn">Login</a>
+      </div>
 
-        <div class="gallery-container">
-            <div class="gallery-items">
-                <div class="img"><img src="sports.jpg" alt=""></div>
-                <div class="text">sports</div>
-            </div>
+
+
+    <div class="container">
+      <!-- grid -->
+
+      <div class="gallery-container w3 h2">
+        <!-- height and width -->
+        <div class="gallery-items">
+          <div class="img"><img src="https://source.unsplash.com/1600x900/?people" alt="" /></div>
+          <div class="text">People</div>
         </div>
+      </div>
 
-        <div class="gallery-container">
-            <div class="gallery-items">
-                <div class="img"><img src="nature.jpg" alt=""></div>
-                <div class="text">Nature</div>
-            </div>
+      <div class="gallery-container w3 h3">
+        <div class="gallery-items">
+          <div class="img"><img src="https://source.unsplash.com/1600x900/?sports" alt="" /></div>
+          <div class="text">sports</div>
         </div>
+      </div>
 
-        <div class="gallery-container">
-            <div class="gallery-items">
-                <div class="img"><img src="fitness.jpg" alt=""></div>
-                <div class="text">fitness</div>
-            </div>
+      <div class="gallery-container h2">
+        <div class="gallery-items">
+          <div class="img"><img src="https://source.unsplash.com/1600x900/?nature" alt="" /></div>
+          <div class="text">Nature</div>
         </div>
+      </div>
 
-        <div class="gallery-container">
-            <div class="gallery-items">
-                <div class="img"><img src="food.jpg" alt=""></div>
-                <div class="text">food</div>
-            </div>
+      <div class="gallery-container w2">
+        <div class="gallery-items">
+          <div class="img"><img src="https://source.unsplash.com/1600x900/?fitness" alt="" /></div>
+          <div class="text">fitness</div>
         </div>
+      </div>
 
-        <div class="gallery-container">
-            <div class="gallery-items">
-                <div class="img"><img src="travel.jpg" alt=""></div>
-                <div class="text">Travel</div>
-            </div>
+      <div class="gallery-container w4 h1">
+        <div class="gallery-items">
+          <div class="img"><img src="https://source.unsplash.com/1600x900/?food" alt="" /></div>
+          <div class="text">food</div>
         </div>
+      </div>
 
-
-
-
-
-
-
-
-
+      <div class="gallery-container">
+        <div class="gallery-items">
+          <div class="img"><img src="https://source.unsplash.com/1600x900/?travel" alt="" /></div>
+          <div class="text">Travel</div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

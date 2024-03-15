@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #section {
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="section"></div>
+
+    <h1>heading 1</h1>
+    <h3>heading 2</h3>
+
+    <script>
+      const section = document.getElementById("section");
+      const heading1 = document.createElement("h1");
+      const heading2 = document.createElement("h2");
+      heading1.innerText = "jai shree ram";
+      heading2.innerText = "jai matta di";
+      section.append(heading1, heading2);
+
+      const heading = document.querySelector("h3");
+      heading.remove();
+    </script>
+  </body>
+</html>

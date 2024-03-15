@@ -44,7 +44,7 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
     color: #fff;
-    font: 25px;
+    font-size: 25px;
     z-index: 1;
     transition: .3s ease-in-out;
     backdrop-filter: blur(5px) saturate(1.8);
@@ -53,6 +53,69 @@ body{
     opacity: 1;
     padding: 1em;
     width: 100%;
+    animation: move-down .5s linear;
 } 
+
+.h1{
+    grid-row: span 1;
+}
+.h2{
+    grid-row: span 2;
+}
+.h3{
+    grid-row: span 3;
+}
+.h4{
+    grid-row: span 4;
+}
+.h5{
+    grid-row: span 5;
+}
+.h6{
+    grid-row: span 6;
+}
+
+.w1{
+    grid-column: span 1;
+}
+.w2{
+    grid-column: span 2;
+}
+.w3{
+    grid-column: span 3;
+}
+.w4{
+    grid-column: span 4;
+}
+.w5{
+    grid-column: span 5;
+}
+.w6{
+    grid-column: span 6;
+}
+
+
+@media (max-width:600px) {
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .w1,.w2,.w3,.w4,.w5,.w6{
+        grid-column: span 1;
+    }
+}
+
+
+
+@keyframes move-down {
+    0%{
+        top: 10%;
+    }
+    50%{
+        top: 35%;
+    }
+    100%{
+        top: 50%;
+    }
+}
 
 

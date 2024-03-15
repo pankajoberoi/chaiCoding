@@ -9,12 +9,12 @@
 
 // let passBox = document.querySelector("#dabba1");
 
-// passBox.onmouseover = () => {
-//   let pass = prompt("enter the valid key to access password ki file");
-//   if (pass == "ram") {
-//     alert("you can access this file!");
-//   }
-// };
+passBox.onmouseover = () => {
+  let pass = prompt("enter the valid key to access password ki file");
+  if (pass == "ram") {
+    alert("you can access this file!");
+  }
+};
 
 // button.onclick = (evt) => {
 //     console.log(evt);

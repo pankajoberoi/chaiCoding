@@ -1,222 +1,300 @@
-// function hello(){
-//     console.log("hello")
-// }
-// // setTimeout(hello,2000)//timeout
-
-//async programming example you order something and continue your other work
 // console.log("one")
-// console.log("two")
-// setTimeout(()=>{
-//     console.log("hiiiii");
-// },3000)
+// console.log("two")//3s wait
 // console.log("three")
-// console.log("four")
+
+// setTimeout(()=>{
+//     // async
+//     console.log("hello buddy 1")
+// },3000)
+
+// console.log("stories")
+
+// setTimeout(()=>{
+//     // async
+//     console.log("hello buddy 2")
+// },6000)
+
+// console.log("body")
+
+// setTimeout(()=>{
+//     // async
+//     console.log("hello buddy 3")
+// },3000)
 
 // setInterval(()=>{
-//     console.log("hehehe")
-// },2000)
-//============================================================================================================
-//call backs
+//     console.log("har har mahadev")
+// },1000)
+
+// callback
+
 // function sum(a,b){
-//     console.log(a+b);
-// }
-
-// function calculator(a,b,sumcallback){
-//     sumcallback(a,b)
-// }
-
-// calculator(1,4,sum)
-// // or
-// calculator(1,3,()=>{
 //     console.log(a+b)
-// })
+// }
 
-//callback Hell
-//nesting example
+// function calculator(a, b, callback) {
+//   callback(a,b);
+// }
+
+// let handle= (a,b) => {
+//     console.log(a + b);
+// }
+// calculator(1, 7,handle);
+
+// calculator(1,7,sum)
 
 // if else
-// let age=19;
-// if(age>=18){
-//     if(age>=60){
-//         console.log("senior")
-//     }else{
-//         console.log("middle")
-//     }
+// let age=65;
+// if(age>=19){
+//   if(age>=60){
+//     console.log("senior citizen")
+//   }
+//   else{
+//     console.log("abhi jawani baaki hai")
+//   }
 // }else{
-//     console.log("child")
+//   console.log("child")
 // }
 
-// loops
 // for(let i=0;i<5;i++){
-//     let str = "";
-//     for(let j=0;j<5;j++){
-//         str=str+j
-//     }
-//     console.log(i,str);
-//
-//callback hell
-// function getData(dataId){
-//     setTimeout(()=>{
-//         console.log("data",dataId)
-//     },3000)
+//   let str = "";
+//   for(let j=0;j<5;j++){
+//     str=str+j;
+//   }
+//   console.log(i,str)
 // }
 
-// //data1
-// //data2
-// //data3//get everydata after 2s
-// getData(1);
-// getData(2);
-// getData(3);//sab ek sath aa gya?
+// function getData(dataId,getNextdata) {
+//   setTimeout(() => {
+//     console.log("data", dataId);
+//     if(getNextdata){
+//       getNextdata();
+//     }
 
-// lets assume example of username and pass to log in -> ek cheej check hoggi fir doosri
-
-// function getData(dataId,getNextData){
-//     setTimeout(()=>{
-//         console.log("data",dataId)
-//         if(getNextData){
-//             getNextData();
-//         }
-//     },3000)
+//   }, 2000);
 // }
 
 // getData(1,()=>{
-//     console.log("getting data 2")
-//     getData(2,()=>{
-//         console.log("getting data 3")
-//         getData(3,()=>{
-//             console.log("getting data 4")
-//             getData(4)
-//         })
+//   console.log("getting data 2.....")
+//   getData(2,()=>{
+//     console.log("getting data 3.....")
+//     getData(3,()=>{
+//       console.log("getting data 4.....")
+//       getData(4)
 //     })
-// })
-//=============================================================================================================
-//Promises
-//order kiya amazon see ->promise kiya ke deliver kardunga
+//   })
+// });
 
+//promise -> object
 // let promise = new Promise((resolve, reject) => {
 //   console.log("i am a promise");
-//   // resolve("success")
-//   reject("some error occured");
+//   resolve("hadiippaaa");
 // });
-// three state of promises pending fullfil rejected
-// we dont create a promise i get returns when we call a api
 
-// function getData(dataId, getNextData) {
+// three states of promises are rejected fulfilled and pending
+
+// function getData(dataId, getNextdata) {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       console.log("data", dataId);
-//       resolve("success")
-//       if (getNextData) {
-//         getNextData();
+//       resolve("success");
+//       if (getNextdata) {
+//         getNextdata();
 //       }
-//     }, 3000);
+//     }, 10000);
 //   });
 // }
-// let result = getData(123);
-// result();
 
-//promise fullfiled .then?
-// else .catch
-// const getPromise=()=>{
-//     return new Promise((resolve, reject) => {
-//           console.log("i am a promise");
-//         //   resolve("success")
-//         reject("network error")
+// let result = getData(2);
 
-//     })
-// }
+// promise fullfill?
+// const getPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("i am a new request");
+//     resolve("product delivered");
+//     // reject("baaad aa gyi")
+//   });
+// };
 
-// let promise=getPromise();
-// promise.then((res)=>{
-//     console.log("promise fulfilled",res)
-// })
+// let promise = getPromise();
+// promise.then((res) => {
+//   console.log("selfie post karenge ab", res);
+// });
 
-// promise.catch((err)=>{
-//     console.log("rejected",err)
-// })
+// promise.catch((err) => {
+//   console.log("refund karo ", err);
+// });
+
 
 // promise chaining
-
-// function asyncFunc() {
-//   return new Promise((resolve, rejet) => {
-//     setTimeout(() => {
-//       console.log("some data 1");
-//       resolve("success");
-//     }, 2000);
-//   });
+// function asyncfunction1(){
+//   return new Promise((resolve,reject)=>{
+    
+//     setTimeout(()=>{
+//       console.log("some data 1")
+//       resolve("success")
+//     },3000)
+//   })
 // }
 
-// function asyncFunc2() {
-//   return new Promise((resolve, rejet) => {
-//     setTimeout(() => {
-//       console.log("some data 1");
+// function asyncfunction2(){
+//   return new Promise((resolve,rejet)=>{
+//     setTimeout(()=>{
+//       console.log("some data 2")
 //       resolve("success");
+//     },3000)
+//   })
+// }
+// function asyncfunction3(){
+//   return new Promise((resolve,rejet)=>{
+//     setTimeout(()=>{
+//       console.log("some data 3")
+//       resolve("success");
+//     },3000)
+//   })
+// }
+
+// console.log("fetching data 1");
+// let p1=asyncfunction1();
+// p1.then((res)=>{
+//   console.log(res);
+// })
+
+// console.log("fetching data 2");
+// let p2=asyncfunction2();
+// p2.then((res)=>{
+//   console.log(res);
+// })//everthing works in parallel
+
+
+// console.log("fetching data 1");
+// let p1=asyncfunction1();
+// p1.then((res)=>{
+//     console.log("fetching data 2");
+//     let p2=asyncfunction2();
+//     p2.then((res)=>{
+
+//     })
+// })
+
+// small syntax
+// console.log("fetching data 1");
+// asyncfunction1().then((res)=>{
+//   console.log("fetching data 2");
+//   asyncfunction2().then((res)=>{
+//     console.log("fetching data 3");
+//     asyncfunction3().then(()=>{})
+//   })
+// })
+
+
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataId);
+//       reject("Network issueee.....");
 //     }, 3000);
 //   });
 // }
 
-// console.log("fetching data 1");
-// let p1 = asyncFunc();
-// p1.then((res) => {
-//   console.log(res);
-// });
-
-// console.log("fetching data 2");
-// let p2 = asyncFunc2();
-// p2.then((res) => {
-//   console.log(res);
-// });//every thing will work parallaly
-
-// console.log("fetching data 1");
-// let p1 = asyncFunc();
-// p1.then((res) => {
-//   console.log("fetching data 2");
-//   let p2 = asyncFunc2();
-//   p2.then((res) => {
-//   });
-// });
-
-// another syntax
-
-// chaining
-// console.log("fetching data 1");
-// asyncFunc().then((res) => {
-//   console.log("fetching data 2");
-//   asyncFunc2();then((res) => {
-//   });
-// });
-
-
-// lets get back to getdata function of callback hell and solve it wit promises
-
-function getData(dataId){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log("data",dataId)
-            resolve("balle")
-        },3000)
-    })   
-}
-
-// promise chain for this
+// console.log("getting data 1...")
 // getData(1).then((res)=>{
-//     console.log(res)
-//     getData(2).then((res)=>{
-//         console.log(res)
-//         getData(3).then((res)=>{
-//             console.log(res)
-//         })
+//   console.log("getting data 2...")
+//   getData(2).then((res)=>{
+//     console.log("getting data 3...")
+//     getData(3).then(()=>{
+//       console.log("getting data 4...")
+//       getData(4)
 //     })
+//   })
+// })
+// .catch((err)=>{
+//   console.log(err)
 // })
 
-// simple syntax
 
+// getData(1,()=>{
+//   console.log("getting data 2.....")
+//   getData(2,()=>{
+//     console.log("getting data 3.....")
+//     getData(3,()=>{
+//       console.log("getting data 4.....")
+//       getData(4)
+//     })
+//   })
+// });
+
+
+
+// =================================================
+
+// async function hello(){
+//   console.log("namaste!!!")
+// }
+
+
+// async function apiDelhi(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       console.log("waether data of delhi")
+//       resolve("balle balle")
+//     },7000)
+//   })
+// }
+// async function apiPune(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       console.log("waether data pune")
+//       resolve("balle balle")
+//     },7000)
+//   })
+// }
+
+// async function getWeatherData(){
+//   const delhi=await apiDelhi();
+//   console.log(delhi)
+//   const pune=await apiPune();
+//   console.log(pune)
+// }
+
+function getData(dataId) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data", dataId);
+      resolve("balle balle")
+    }, 3000);
+  });
+}
+
+async function getAlldata(){
+  await getData(1)
+  console.log("getting data 2")
+  await getData(2)
+  await getData(3)
+  await getData(4)
+}
+console.log("getting data 1...")
 getData(1).then((res)=>{
-    return getData(2);
+  console.log("getting data 2...")
+  getData(2).then((res)=>{
+    console.log("getting data 3...")
+    getData(3).then(()=>{
+      console.log("getting data 4...")
+      getData(4)
+    })
+  })
 })
-.then((res)=>{
-    return getData(3);
+.catch((err)=>{
+  console.log(err)
 })
-.then((res)=>{
-    console.log(res)
-})
+
+
+getData(1,()=>{
+  console.log("getting data 2.....")
+  getData(2,()=>{
+    console.log("getting data 3.....")
+    getData(3,()=>{
+      console.log("getting data 4.....")
+      getData(4)
+    })
+  })
+});

@@ -1,7 +1,0 @@
-
- 1709804163441 : ::1 : GET : /api/users 
-  17,09,80,42,21,095 : ::1 : GET : /api/users 
-  1709804290207 : ::1  DELETE  /api/users/5 
-  
-  1709804351070 : ::1  PATCH  /api/users/5 
-  1709804419716 : ::1  PATCH  /api/users/5 
