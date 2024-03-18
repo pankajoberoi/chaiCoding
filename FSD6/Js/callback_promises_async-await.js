@@ -63,14 +63,11 @@
 //   console.log(i,str)
 // }
 
-// function getData(dataId,getNextdata) {
+// function getData(dataId,getNextData) {
 //   setTimeout(() => {
-//     console.log("data", dataId);
-//     if(getNextdata){
-//       getNextdata();
-//     }
-
-//   }, 2000);
+//     console.log("data ", dataId);
+//     getNextData()
+//   },3000);
 // }
 
 // getData(1,()=>{
@@ -85,9 +82,9 @@
 // });
 
 //promise -> object
-// let promise = new Promise((resolve, reject) => {
+// const result=new Promise((resolve, reject) => {
 //   console.log("i am a promise");
-//   resolve("hadiippaaa");
+//   reject("sorry")
 // });
 
 // three states of promises are rejected fulfilled and pending
@@ -124,14 +121,13 @@
 //   console.log("refund karo ", err);
 // });
 
-
 // promise chaining
 // function asyncfunction1(){
 //   return new Promise((resolve,reject)=>{
-    
+
 //     setTimeout(()=>{
 //       console.log("some data 1")
-//       resolve("success")
+//       resolve("balle balle")
 //     },3000)
 //   })
 // }
@@ -144,27 +140,16 @@
 //     },3000)
 //   })
 // }
-// function asyncfunction3(){
-//   return new Promise((resolve,rejet)=>{
-//     setTimeout(()=>{
-//       console.log("some data 3")
-//       resolve("success");
-//     },3000)
-//   })
-// }
 
-// console.log("fetching data 1");
 // let p1=asyncfunction1();
 // p1.then((res)=>{
 //   console.log(res);
 // })
 
-// console.log("fetching data 2");
 // let p2=asyncfunction2();
 // p2.then((res)=>{
 //   console.log(res);
 // })//everthing works in parallel
-
 
 // console.log("fetching data 1");
 // let p1=asyncfunction1();
@@ -175,17 +160,19 @@
 
 //     })
 // })
+// p1.catch((err)=>{
+//   console.log(err)
+// })
 
 // small syntax
 // console.log("fetching data 1");
 // asyncfunction1().then((res)=>{
+//   console.log(res)
 //   console.log("fetching data 2");
 //   asyncfunction2().then((res)=>{
-//     console.log("fetching data 3");
-//     asyncfunction3().then(()=>{})
+
 //   })
 // })
-
 
 // function getData(dataId) {
 //   return new Promise((resolve, reject) => {
@@ -211,7 +198,6 @@
 //   console.log(err)
 // })
 
-
 // getData(1,()=>{
 //   console.log("getting data 2.....")
 //   getData(2,()=>{
@@ -223,78 +209,76 @@
 //   })
 // });
 
-
-
 // =================================================
 
 // async function hello(){
 //   console.log("namaste!!!")
 // }
+// hello();
+// async function apiDelhi() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("waether data of delhi");
+//       resolve("balle balle");
+//     }, 2000);
+//   });
+// }
+// async function apiPune() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("waether data pune");
+//       resolve("balle balle");
+//     }, 2000);
+//   });
+// }
 
+// async function getWeatherData() {
+//   const delhi = await apiDelhi();
+//   console.log(delhi);
+//   const pune = await apiPune();
+//   console.log(pune);
+// }
 
-// async function apiDelhi(){
-//   return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//       console.log("waether data of delhi")
+// getWeatherData();
+
+// function getData(dataId) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("data", dataId);
 //       resolve("balle balle")
-//     },7000)
+//     }, 3000);
+//   });
+// }
+
+// async function getAlldata(){
+//   await getData(1)
+//   console.log("getting data 2")
+//   await getData(2)
+//   await getData(3)
+//   await getData(4)
+// }
+// console.log("getting data 1...")
+// getData(1).then((res)=>{
+//   console.log("getting data 2...")
+//   getData(2).then((res)=>{
+//     console.log("getting data 3...")
+//     getData(3).then(()=>{
+//       console.log("getting data 4...")
+//       getData(4)
+//     })
 //   })
-// }
-// async function apiPune(){
-//   return new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//       console.log("waether data pune")
-//       resolve("balle balle")
-//     },7000)
+// })
+// .catch((err)=>{
+//   console.log(err)
+// })
+
+// getData(1,()=>{
+//   console.log("getting data 2.....")
+//   getData(2,()=>{
+//     console.log("getting data 3.....")
+//     getData(3,()=>{
+//       console.log("getting data 4.....")
+//       getData(4)
+//     })
 //   })
-// }
-
-// async function getWeatherData(){
-//   const delhi=await apiDelhi();
-//   console.log(delhi)
-//   const pune=await apiPune();
-//   console.log(pune)
-// }
-
-function getData(dataId) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("data", dataId);
-      resolve("balle balle")
-    }, 3000);
-  });
-}
-
-async function getAlldata(){
-  await getData(1)
-  console.log("getting data 2")
-  await getData(2)
-  await getData(3)
-  await getData(4)
-}
-console.log("getting data 1...")
-getData(1).then((res)=>{
-  console.log("getting data 2...")
-  getData(2).then((res)=>{
-    console.log("getting data 3...")
-    getData(3).then(()=>{
-      console.log("getting data 4...")
-      getData(4)
-    })
-  })
-})
-.catch((err)=>{
-  console.log(err)
-})
-
-
-getData(1,()=>{
-  console.log("getting data 2.....")
-  getData(2,()=>{
-    console.log("getting data 3.....")
-    getData(3,()=>{
-      console.log("getting data 4.....")
-      getData(4)
-    })
-  })
-});
+// });
