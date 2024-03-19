@@ -124,10 +124,110 @@
 // console.log(age1<=age2)
 
 
-let currentYear=2024;
+// let currentYear=2024;
 
 
-console.log(currentYear+=20 < (currentYear-=25));
+// console.log(currentYear+=20 < (currentYear-=25));
+
+// const markHeight=1.67;
+// const markWeight=78;
+
+// const JohnWeight=95;
+// const johnHeight=1.55;
+
+// const markBmi=markWeight/(markHeight ** 2)
+// const JohnBmi=JohnWeight/(johnHeight **2)
+
+// console.log("BMI of Mark is " +  markBmi + " and BMI of John is " + JohnBmi)
+
+// const markHigherBmi=markBmi>JohnBmi
+// console.log(markHigherBmi)
+
+
+//String with templates
+
+// const naam="Pawan"
+// const job="Software developer"
+// const birthYear=2003;
+// const year=2024;
+
+// const information="i am " + naam + " a " + job + " with age of " + (year-birthYear) + " years  old ";
+
+// console.log(information)
+
+//template literals
+
+// const Newinfo=`I am ${naam} a ${job} with age of ${(year-birthYear)} yaers old`
+
+// console.log(Newinfo);
+
+// const age=prompt("enter Your age")
+
+// if(age>=18 && age<60){
+//     console.log("you can drive")
+// }
+// else if(age>60){
+//     console.log(`bas kar budhe ghar baith`)
+// }
+// else{
+//     const yearsLeft=18-age;
+//     console.log(`wait for another ${yearsLeft} years `)
+// }
+
+//type conversion and coersion
+
+// const result=(18 == '19')
+// console.log(result)
+
+
+// const inputYear=Number(prompt("enter an Year"))
+// // const converted=Number(inputYear)
+// console.log(inputYear+18,inputYear)
+
+// console.log(typeof NaN)
+
+
+// let email;
+
+// if(email == undefined){
+//     console.log("Email must be required!!")
+// }
+// else{
+//     console.log(email);
+// }
+
+
+// let email="123@gmail.com"
+// console.log(email)
+// email=null;
+// console.log(email)
+
+// type coersion
+// const age = 23;
+// console.log(age)
+
+// console.log("i am " + 23 + " years old")
+
+// console.log('23' + '10' - 3)
+// let n = '1' + 1;
+// console.log(n)
+// n=n-1;
+// console.log(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
