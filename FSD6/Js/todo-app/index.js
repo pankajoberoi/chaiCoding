@@ -3,7 +3,7 @@ let newTaskInput = document.querySelector("#newTask"); //college
 let todoList = document.querySelector("#todoList");
 
 
-let draggingTask=null
+let draggingTask=null;
 
 function createTaskElement(taskText) {
   let taskElement = document.createElement("div");
@@ -31,11 +31,11 @@ function createTaskElement(taskText) {
 
   taskElement.addEventListener("dragstart",()=>{
     draggingTask=taskElement;
-    taskElement.classList.add(".dragging")
+    taskElement.classList.add("dragging")
 
   })
   taskElement.addEventListener("dragend",()=>{
-    taskElement.classList.remove(".dragging")
+    taskElement.classList.remove("dragging")
     draggingTask=null
   })
 

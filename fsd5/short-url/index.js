@@ -18,12 +18,12 @@ app.set("view engine","ejs")
 app.set("views",path.resolve('./views')) 
 
 
-app.get('/test',async (req,res)=>{
-    const allUrls=await URL.find({});
-    return res.render("home",{
-        urls:allUrls
-    })
-})
+// app.get('/test',async (req,res)=>{
+//     const allUrls=await URL.find({});
+//     return res.render("home",{
+//         urls:allUrls
+//     })
+// })
 
 
 app.use("/url",urlRouter)//backend

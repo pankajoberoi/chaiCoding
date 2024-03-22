@@ -215,6 +215,81 @@
 // console.log(n)
 
 
+// truthy and falsy values
+// 0,undefined,null,NaN
+
+// console.log(Boolean(0));
+
+// console.log(Boolean(undefined))
+
+// console.log(Boolean(null));
+
+// console.log(Boolean(NaN));
+
+
+// let money=0;
+// console.log(money)
+
+// if(money){
+//     console.log("karle b hai kharcha")
+// }
+// else{
+//     console.log("kamaoo pehle")
+// }
+
+
+// let height=null
+
+// if(height){
+//     console.log("yayayaya")
+// }
+// else{
+//     console.log("its not a value")
+// }
+
+// let age=Number(prompt("enter your age"))
+
+// if(age===18){
+//     console.log("jawani chad gyi")
+// }
+// else{
+//     console.log("hat pareee")
+// }
+
+
+const hasDriversLicense=true;
+const hasGoodVision=false;
+const isTired=true;
+
+// console.log(hasDriversLicense && hasGoodVision)
+// console.log(hasDriversLicense || hasGoodVision)
+// console.log(!hasDriversLicense)
+
+
+
+if((hasDriversLicense && hasGoodVision) || isTired){
+    console.log("you can drive")
+}
+else{
+    console.log("bhai rehne dee")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

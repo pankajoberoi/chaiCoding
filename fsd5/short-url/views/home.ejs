@@ -15,11 +15,36 @@
   <body>
     <h1>URL SHORTNER</h1>
     <div>
+      <% if (locals.id) { %>
+       <p>Url Generated : http://localhost:8001/url/<%= id %></p>
+      <% } %>
+    </div>
+    <div>
         <form method="POST" action="/url">
             <label>Enter Your Original URL</label>
             <input type="text" name="url" placeholder="https://example.com">
             <button type="submit">Generate</button>
         </form>
+        <% if (locals.urls) { %>
+         <table>
+          <thead>
+            <th>S.No</th>
+            <th>ShortID</th>
+            <th>Redirect</th>
+            <th>clicks</th>
+          </thead>
+          <tbody>
+            <% urls.forEach((url,index) => { %>
+             <tr>
+              <td> <%= index + 1 %> </td>
+              <td> <%= url.shortId %></td>
+              <td> <%= url.redirectURL %></td>
+              <td> <%= url.visitHistory.length %></td>
+             </tr>
+            <% }) %>
+          </tbody>
+         </table>
+        <% } %>
     </div>
   </body>
 </html>
