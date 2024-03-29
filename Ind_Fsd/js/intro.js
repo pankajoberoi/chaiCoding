@@ -257,9 +257,9 @@
 // }
 
 
-const hasDriversLicense=true;
-const hasGoodVision=false;
-const isTired=true;
+// const hasDriversLicense=true;
+// const hasGoodVision=false;
+// const isTired=true;
 
 // console.log(hasDriversLicense && hasGoodVision)
 // console.log(hasDriversLicense || hasGoodVision)
@@ -267,28 +267,77 @@ const isTired=true;
 
 
 
-if((hasDriversLicense && hasGoodVision) || isTired){
-    console.log("you can drive")
-}
-else{
-    console.log("bhai rehne dee")
-}
+// if((hasDriversLicense && hasGoodVision) || isTired){
+//     console.log("you can drive")
+// }
+// else{
+//     console.log("bhai rehne dee")
+// }
 
 
+// let day=prompt("enter the day");
+
+// switch(day){
+//     case 'monday': 
+//         console.log("chest day")
+//         break;
+
+//     case 'tuesday':
+//         console.log("back day")
+//         break;
+
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log("bi tri day")
+//         break;
+
+//     case 'friday':
+//         console.log("shoulder day")
+//         break;
+
+//     case 'saturday':
+//         console.log("leg day")
+//          break;
+
+//     case 'sunday':
+//         console.log("rest!!!!!!")
+//         break;
+//     default:
+//         console.log("enter valid day")
+        
+// }
 
 
+// statement vs expression
 
 
+// let birthYear=2000;
+// let age=2024-birthYear;//value
+
+// console.log(age);
 
 
+// if(age>=18){//statements 
+//     console.log("you are an adult")
+//     console.log("and yes you can drive")
+// }
+
+// console.log(`my age is ${18*2}`)
+
+// backticks always expects a expression
+
+const age=12;
+
+// condition ? true : false
+
+// age>=18 ?console.log("jawani chad gyi"):console.log("abhi bache hoo");
+
+const drink=age>=18? `Wine` : `water`
+
+console.log(drink)
 
 
-
-
-
-
-
-
+console.log(`I like to drink ${age>=18? `Wine` : `water`}`)
 
 
 
