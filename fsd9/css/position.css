@@ -1,0 +1,31 @@
+.container{
+    border: 4px solid black;
+    height: 800px;
+    background-color: aqua;
+}
+.box{
+    border: 4px solid black;
+    height: 800px;
+    background-color: red;
+}
+img{
+    margin: 5px;
+}
+
+.image1{
+    position: sticky;
+    top: 200px;
+}
+.image2{
+    /*position: relative;
+    top:200px;
+    right: 100px;*/
+}
+.image3{
+    /*position: absolute;
+    right:200px;*/
+}
+.image4{
+    position: fixed;
+    top: 200px;
+}
