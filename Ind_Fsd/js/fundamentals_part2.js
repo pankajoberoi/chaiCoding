@@ -36,6 +36,7 @@
 // const MixJuice=fruitProcessor(3,1)
 // console.log(MixJuice)
 
+
 // const appleJuice=fruitProcessor(5,0)
 // console.log(appleJuice)
 
@@ -45,16 +46,14 @@
 
 // function Declarations vs function expression
 
-const age1=calAge1(2000);
-console.log(age1)
+// function calAge1(birthYear){
+//     return 2024-birthYear;
+// }
 
-function calAge1(birthYear){
-    return 2024-birthYear;
-}
+// const age1=calAge1(2000);
+// console.log(age1)
 
 // function expression->it will return a value
-
-
 
 // const calAge2=function (birthYear){
 //     return 2024-birthYear
@@ -72,26 +71,40 @@ function calAge1(birthYear){
 
 // Arrow functions -> form of function expression
 
-const calAge2=function (birthYear){
-    return 2024-birthYear
-}
+// const calAge2=function (birthYear){
+//     return 2024-birthYear
+// }
 
-const age2=calAge2(1990);
-console.log(age2);
+// const age2=calAge2(1990);
+// console.log(age2);
 
 
 // ===========================================
-const calAge3= birthYear => 2024-birthYear;//one liner function
+// const calAge3= birthYear => 2024-birthYear;//one liner function
 
-const age3=calAge3(1995);
-console.log(age3);
+// const age3=calAge3(1995);
+// console.log(age3);
 
 
 
-const Retirement= (birthYear,name) =>{
-    console.log("hello " + name );
-    const age=2024-birthYear;
-    const retirement=65-age
-    return retirement;
-}
-console.log("Your pending years to retire are " + Retirement(1992,"Raju"))
+// const Retirement= (birthYear,name) =>{
+//     console.log("hello " + name );
+//     const age=2024-birthYear;
+//     const retirement=65-age
+//     return retirement;
+// }
+
+// console.log("Your pending years to retire are " + Retirement(1992,"Raju"))
+
+
+
+console.log(x);
+var x=10;
+
+console.log(z)
+const z=7;
+
+
+console.log(y)
+let y=5;
+
