@@ -97,14 +97,64 @@
 // console.log("Your pending years to retire are " + Retirement(1992,"Raju"))
 
 
+//Hoisting  ======================
+// console.log(x);
+// var x=10;
 
-console.log(x);
-var x=10;
-
-console.log(z)
-const z=7;
+// console.log(z)
+// const z=7;
 
 
-console.log(y)
-let y=5;
+// console.log(y)
+// let y=5;
+
+// const output=normal();
+// console.log(output)
+
+// function normal(){
+//     return "namaste......"
+// }
+
+// var output2=expression()
+// console.log(output2)
+
+// var expression=function(){
+//     return "mitron....."
+// }
+
+const cutPieces=(fruit)=>{
+    return fruit*4;
+}
+
+
+function fruitProcessor(apples,oranges,Name){
+        console.log("fruit juice for " + Name)
+        const applePieces=cutPieces(apples)
+        const orangePieces=cutPieces(oranges)
+        const juice=`Juice with ${applePieces} apples and ${orangePieces} oranges `;
+        return juice;
+}
+
+const name=(x)=>{
+    return x
+}
+
+const x=prompt("enter your name")
+
+const output=fruitProcessor(3,5,name(x))
+console.log(output)
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
 
