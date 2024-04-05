@@ -2,7 +2,7 @@ const express = require("express");
 const { connectMongoDb } = require("./connection");
 const path = require("path");
 
-const { restrictToLoggedInUserOnly }=require('./middleware/auth')
+const { restrictToLoggedInUserOnly,checkAuth }=require('./middleware/auth')
 
 
 const urlRouter = require("./routes/url");
@@ -28,7 +28,7 @@ app.set("views", path.resolve("./views"));
 
 app.use("/url",restrictToLoggedInUserOnly ,urlRouter); //backend
 app.use('/user',userRoute);
-app.use("/",staticRouter); //frontend
+app.use("/",checkAuth,staticRouter); //frontend
 
 //analytics pending
 
