@@ -107,5 +107,33 @@ function selectAnswer(event){
 
 }
 
+function showScore(){
+    resetstate();
+    questionElement.innerHTML=`Your score ${score} out of  ${questions.length}`
+    nextButton.innerHTML="Play again" 
+    nextButton.style.display="block"  
+}
+
+
+function handleNextbutton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex<questions.length){
+        showQuestion();
+    }
+    else{
+        showScore();
+    }
+}
+
+
+nextButton.addEventListener("click",()=>{
+    if(currentQuestionIndex<questions.length){
+        handleNextbutton();
+    }
+    else{
+        startQuiz();
+    }
+})
+
 
 startQuiz();

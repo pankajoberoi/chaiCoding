@@ -122,39 +122,266 @@
 //     return "mitron....."
 // }
 
-const cutPieces=(fruit)=>{
-    return fruit*4;
-}
+// const cutPieces=(fruit)=>{
+//     return fruit*4;
+// }
 
 
-function fruitProcessor(apples,oranges,Name){
-        console.log("fruit juice for " + Name)
-        const applePieces=cutPieces(apples)
-        const orangePieces=cutPieces(oranges)
-        const juice=`Juice with ${applePieces} apples and ${orangePieces} oranges `;
-        return juice;
-}
+// function fruitProcessor(apples,oranges,Name){
+//         console.log("fruit juice for " + Name)
+//         const applePieces=cutPieces(apples)
+//         const orangePieces=cutPieces(oranges)
+//         const juice=`Juice with ${applePieces} apples and ${orangePieces} oranges `;
+//         return juice;
+// }
 
-const name=(x)=>{
-    return x
-}
+// const name=(x)=>{
+//     return x
+// }
 
-const x=prompt("enter your name")
+// const x=prompt("enter your name")
 
-const output=fruitProcessor(3,5,name(x))
-console.log(output)
+// const output=fruitProcessor(3,5,name(x))
+// console.log(output)
     
-   
+
+// const calAvg=(a,b,c)=>{
+//     return (a+b+c)/3;
+// }
+
+// const AvgCsk=calAvg(144,223,121);
+// console.log(`Avg of csk is ${AvgCsk}`)
+// const AvgKkr=calAvg(65,54,89);
+// console.log(`Avg of kkr is ${AvgKkr}`)
+
+// checkWinner(AvgCsk,AvgKkr);
+
+// function checkWinner(TeamA,TeamB){
+//     if(TeamA >= 2*TeamB){
+//         console.log("Team A is winner -> csk")
+//     }
+//     else if (TeamB >= 2*TeamA ){
+//         console.log("Team B is winner -> kkr")
+//     }
+//     else{
+//         console.log("no one wins")
+//     }
+
+    
+
+// }
+
+
+// Arrays
+
+
+// const friend1="Raju"
+// const friend2="sehwag"
+// const friend3="Arohi"
+
+// const friends=["raju","sehwag","arohi"];
+// console.log(friends)
+
+// const birthYear=new Array(1990,1995,2000,2001)
+
+// console.log(birthYear)
+
+
+
+// console.log(friends[1])
+
+// console.log(friends.length);
+
+// console.log(friends[friends.length-1])
+
+
+// friends[2]="Pankaj"
+// console.log(friends)
+
+// friends=[]
+// console.log(friends)
+
+// const person=["Raju",22,"bhopal",(65-22),true,friends]
+// console.log(person)
+
+
+
+
+// const hello=()=>
+// {
+//     return "namaste"
+// }
+
+// const mitron=()=>{
+//     return "mitron"
+// }
+
+// const greeeting=[hello,mitron]
+
+// console.log(greeeting[0]())
 
 
 
 
 
+// function calAge(birthYear){
+//     return 2024-birthYear;
+// }
+
+// const birthYear=[1990,2001,2005]
+
+// const age1=calAge(birthYear[0])
+// const age2=calAge(birthYear[1])
+// const age3=calAge(birthYear[2])
 
 
 
 
+// const ages=[age1,age2,age3]
+// console.log(ages)
+
+
+// const friends=['prince','raju','boondi','kumar']
+
+// // console.log(friends)
+
+
+// const length=friends.push('Pankaj')
+// console.log(friends)
+// console.log(length)
+
+// friends.unshift('sonu');
+// console.log(friends)
+
+
+// const deleted=friends.pop();
+// console.log(friends)
+// console.log(deleted);
+
+
+// const deletedTop=friends.shift();
+// console.log(friends);
+// console.log(deletedTop);
+
+
+// console.log(friends.indexOf('boondi')) 
+
+
+// console.log(friends.includes('raju'))
 
 
 
+// const calTip=function (bill){
+//     return bill>=50 && bill<=300 ? bill*0.15 : bill*0.20; 
+// }
+
+// const bills=[125,555,44];
+// console.log(bills);
+
+// const tip=[calTip(bills[0]),calTip(bills[1]),calTip(bills[2])]
+
+// console.log(tip)
+
+
+// const total=[bills[0] + tip[0],
+//             bills[1] + tip[1],
+//             bills[2] + tip[2]]
+
+
+// console.log(total);
+
+
+//map
+
+// const salaries=[200,250,450,300]
+
+// // const output=salaries.map((item)=>item*2)
+// const output=salaries.map(double)
+
+// function double(x){
+//     return x+50;
+// }
+
+// console.log(output);
+
+
+//filter
+// const arr=[5,1,6,8,2];
+
+// // const output=arr.filter(isOdd)
+// const output=arr.filter((item)=>{return item%2===0})
+
+// function isOdd(x){
+//     return x%2 !== 0;
+// }
+
+// console.log(output);
+
+
+//reduce
+
+// let arr=[1,2,3,4,5]
+// let sum=0;
+// function findSum(arr){
+//     for(let i=0;i<arr.length;i++){
+//         sum=sum+arr[i]
+//     }
+//     return sum;
+// }
+
+// console.log(findSum(arr))
+
+
+
+// const finalSum=arr.reduce((acc,curr)=>{
+//     acc=acc+curr;
+//     return acc;
+// },0)
+
+// console.log(finalSum)
+
+// const arr=[11,88,2,19]
+// let max=0
+// function maximum(arr){  
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]>max){
+//             max=arr[i];
+//         }
+//     }
+//    return max;
+// }
+
+// console.log(maximum(arr))
+
+
+
+// const output=arr.reduce((max,curr)=>{
+//     if(curr>max){
+//         max=curr;
+//     }
+//     return max
+// },0)
+
+// console.log(output);
+
+
+//objects
+
+const person={
+    firstName:"Pankaj",
+    lastName:"oberoi",
+    age:(2024-2001),
+    jobStatus:true,
+    friends:['Raju','bholu','boondi']
+}
+
+console.log(person)
+
+// dot vs bracket
+
+console.log(person.firstName)
+console.log(person.age)
+console.log(person.friends[2])
+
+console.log(person["lastName"])
 
