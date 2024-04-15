@@ -367,21 +367,110 @@
 
 //objects
 
-const person={
-    firstName:"Pankaj",
-    lastName:"oberoi",
-    age:(2024-2001),
-    jobStatus:true,
-    friends:['Raju','bholu','boondi']
-}
+// const person={
+//     firstName:"Pankaj",
+//     lastName:"oberoi",
+//     age:(2024-2001),
+//     jobStatus:false,
+//     experience:1,
+//     salary:20000,
+//     friends:['Raju','bholu','boondi']
+// }
 
-console.log(person)
+// console.log(person)
 
 // dot vs bracket
 
-console.log(person.firstName)
-console.log(person.age)
-console.log(person.friends[2])
+// console.log(person.firstName)
+// console.log(person.age)
+// console.log(person.friends[0])
 
-console.log(person["lastName"])
+// console.log(person["lastName"])
+
+// const nameKey='Name'
+
+// console.log(person['first'+nameKey])
+// console.log(person['last'+nameKey])
+
+// console.log(person.first+nameKey)
+
+
+
+// const info=prompt("which info do u want ")
+// // return => expression
+
+
+// console.log(person[info])
+
+
+// if(person[info]>=2){
+//     person.salary=person.salary+5000
+//     console.log(person.salary)
+// }
+// else{
+//     person.salary+=1000;
+//     console.log(person.salary)
+// }
+
+
+
+// person.location="Bhopal";
+// person["Insta"]="anglePriya"
+
+// console.log(person)
+
+
+//Loooooooooooops
+// for loop
+// let sum=0
+// for(var i=1;i<=10;i++){
+//     sum=i*(i+1)/2
+// }
+// console.log(sum);
+
+
+// while loop
+
+// var open=prompt("kya nya coustomer ayya");
+// let kamai=0;
+// let customer=0
+// while(open==='yes'){
+//     kamai+=50;
+//     open=prompt("kya nya coustomer ayya");
+//     customer++;
+// }
+// console.log("mere pure din ki kamai " + kamai + " and my total customers were " + customer)
+
+// do{
+//     kamai+=50;
+//     open=prompt("kya nya coustomer ayya");
+//     customer++;
+// }while(open==='yes');
+
+// console.log("mere pure din ki kamai " + kamai + " and my total customers were " + customer)
+
+
+// for of vs for in
+
+// for of
+// let str="JavaScript"
+// let lenght=0
+// for(let item of str){
+//     console.log("item = " + item);
+//     lenght++;
+// }
+// console.log("length of your string is " + lenght)
+
+// for in
+
+let student={
+    name:"Rahul",
+    age:20,
+    cgpa:7.8,
+    isPass:true,
+}
+
+for(let key in student){
+    console.log(student[key])
+}
 
