@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: yellow;
+        padding: 5rem;
+        display: flex;
+    }
+    .item{
+        margin: 10px;
+        padding: 2rem;
+        height: 150px;
+        width: 150px;
+        background:linear-gradient(aqua,pink);
+        border:2px solid black;
+        transition-duration: 2s;
+    }
+
+    #RotateX:hover{
+        transform: rotateX(180deg);
+    }
+    #RotateY:hover{
+        transform: rotateY(180deg);
+    }
+    #RotateZ:hover{
+        transform: rotateZ(180deg);
+    }
+    #TranslateX:hover{
+        transform: translateX(100px);
+    }
+    #TranslateY:hover{
+        transform: translateY(100px);
+    }
+    #TranslateZ:hover{
+        transform:perspective(300px) translateZ(-100px);
+    }
+    #ScaleX:hover{
+        transform: scaleX(1.5) ;
+    }
+    #ScaleY:hover{
+        transform: scaleY(1.5) ;
+    }
+    #ScaleZ:hover{
+        transform:perspective(300px) scaleZ(3) rotateY(30deg);
+    }
+
+
+
+
+
+
+   </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="RotateX">RotateX</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TransaleX</div>
+        <div class="item" id="TranslateY">TransaleY</div>
+        <div class="item" id="TranslateZ">TransaleZ</div>
+        <div class="item" id="ScaleX">ScaleX</div>
+        <div class="item" id="ScaleY">ScaleY</div>
+        <div class="item" id="ScaleZ">ScaleZ</div>
+    </div>
+</body>
+</html>

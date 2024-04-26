@@ -1,14 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-let isLoggedIn=true;
+let isLogin=true;
+let captcha=false;
 
 let element=(
     <div>
-        <h1>hello {isLoggedIn?"Pankaj":"Kon hai be tu?"}</h1>
+        <h1>hello {isLogin?"Pankaj":"Kon hai be tu"}</h1>
+        {(isLogin && captcha)?<p>InstaGram Logged in</p>:<p>try again</p>}
     </div>
 )
-
 
 
 
