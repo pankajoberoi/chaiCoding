@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.container{
+            height:300px ;
+            width:300px ;
+            background-color: aqua;
+            border: 2px solid black;
+        }
+        @media (min-height:500px) {
+            .container{
+                background-color: green;
+                height:500px ;
+                width:500px ;
+            }
+        }*/
+        .box{
+            background-color: aqua;
+            height: 80vh;
+            width: 80vw;
+            border: 2px solid black;
+            display: flex;
+        }
+        .dabba{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        #dabba1{
+            background-color: red;
+        }
+        #dabba2{
+            background-color: purple;
+        }
+        #dabba3{
+            background-color: blue;
+        }
+        #dabba4{
+            background-color: yellow;
+        }
+        @media (max-width:600px) {
+            .box{
+                flex-direction: column;
+            }
+        }
+        @media (max-width:300px) {
+            .dabba{
+                border-radius: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, non.</div> -->
+    <div class="box">
+        <div class="dabba" id="dabba1">1</div>
+        <div class="dabba" id="dabba2">2</div>
+        <div class="dabba" id="dabba3">3</div>
+        <div class="dabba" id="dabba4">4</div>
+    </div>
+
+
+
+</body>
+</html>

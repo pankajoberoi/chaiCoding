@@ -463,14 +463,14 @@
 
 // for in
 
-let student={
-    name:"Rahul",
-    age:20,
-    cgpa:7.8,
-    isPass:true,
-}
+// let student={
+//     name:"Rahul",
+//     age:20,
+//     cgpa:7.8,
+//     isPass:true,
+// }
 
-for(let key in student){
-    console.log(student[key])
-}
+// for(let key in student){
+//     console.log(student[key])
+// }
 

@@ -1,0 +1,90 @@
+~<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*.box{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            background-color: blueviolet;
+            margin: 50px auto;
+            transition-duration: 3000ms;
+            transition-property:all;
+
+        }
+        .box:hover{
+            border-radius: 100%;
+            background-color: yellow;
+        }*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .parent:hover .child{
+            width: 100vw;
+        }
+
+        .child{
+            width: 100px;
+            height: 100px;
+            transition-duration: 3s;
+            color: white;
+            font-size: 20px;
+            transition-delay: 2s;
+
+           /* transition: all 3s linear 1.5;
+            transition: property | duration | timing-fn | delay;*/
+        }
+
+        .child-1{
+            background-color: brown;
+            transition-timing-function: linear;
+        }
+        .child-2{
+            background-color: blue;
+            transition-timing-function: ease-in;
+        }
+        .child-3{
+            background-color: red;
+            transition-timing-function: ease-out;
+        }
+        .child-4{
+            background-color: black;
+            transition-timing-function: ease-in-out;
+        }
+        .child-5{
+            background-color: orangered;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55)
+        }
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+    <div class="parent">
+        <div class="child child-1">Linear</div>
+        <div class="child child-2">Ease - in</div>
+        <div class="child child-3">Ease - out</div>
+        <div class="child child-4">Ease - in - out</div>
+        <div class="child child-5">cubic-bezier</div>
+    </div>
+</body>
+</html>

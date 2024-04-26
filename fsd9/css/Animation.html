@@ -17,7 +17,7 @@
             width: 100vw;
             
         }
-        .box{
+        .box1{
             height: 80px;
             width: 250px;
             background-color: blue;
@@ -26,11 +26,11 @@
             margin: 5px;
             position: relative;
             animation: Dilkiecha; 
-            animation-duration: 4s;
+            animation-duration: 2.5s;
             animation-iteration-count: infinite;   
             animation-direction: alternate;  
-            animation-delay: 2.5s;  
-            animation-timing-function: ease-in-out;
+            /*animation-delay: 2.5s; */ 
+            animation-timing-function: linear;
 
         }
         @keyframes Dilkiecha {
@@ -43,6 +43,65 @@
         }
 
 
+        .box2{
+            height: 80px;
+            width: 250px;
+            background-color: blue;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            position: relative;
+            top: 50%;
+            animation: Dilkiecha2; 
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;   
+            animation-direction: alternate-reverse;  
+            /*animation-delay: 2.5s; */ 
+            animation-timing-function: linear;
+
+        }
+        @keyframes Dilkiecha2 {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1150px;
+            }
+        }
+
+        .ball{
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(purple,red);
+            border-radius: 100%;
+            position: relative;
+            animation:ball-movement;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+        @keyframes ball-movement {
+            0%{
+                top: 5%;
+                left: 5%;
+            }
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+            60%{
+                top: 50%;
+                left: 5%;
+            }
+            100%{
+                top: 50%;
+                left: 90%;
+            }
+        }
+
+
+
 
 
 
@@ -52,7 +111,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="ball"></div>
+        <div class="box2"></div>
+
     </div>
 </body>
 </html>
