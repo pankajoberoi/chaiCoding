@@ -24,10 +24,10 @@
 // JSX -> javascript with html
 
 
-let h1=<div><h1>jai shree ram</h1></div>
+// let h1=<div><h1>jai shree ram</h1></div>
 
-let rootEl=document.getElementById('root')
+// let rootEl=document.getElementById('root')
 
-ReactDOM.render(h1,rootEl)
+// ReactDOM.render(h1,rootEl)
 
 
