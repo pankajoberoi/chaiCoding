@@ -1,17 +1,26 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-let isLogin=true;
-let captcha=false;
+
+function Card(){
+ return (
+    <div>
+        <h1>Title</h1>
+        <p>Description</p>
+    </div>
+ )  
+}
+
 
 let element=(
     <div>
-        <h1>hello {isLogin?"Pankaj":"Kon hai be tu"}</h1>
-        {(isLogin && captcha)?<p>InstaGram Logged in</p>:<p>try again</p>}
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
     </div>
 )
-
-
 
 
 let rootEl=document.getElementById('root')
