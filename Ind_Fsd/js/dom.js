@@ -66,21 +66,49 @@
 
 // console.log(link.getAttribute('href'))
 
-let searchEngine=prompt("Which search ingine you want to set by default")
+// let searchEngine=prompt("Which search ingine you want to set by default")
 
-const link=document.querySelector("a")
+// const link=document.querySelector("a")
 
 
-if(searchEngine==='google'){
-    link.innerText="Go to Google"
-    link.setAttribute('href','https://www.google.com/')
-}
-else{
-    link.innerText="Go to Yahoo"
-    link.setAttribute('href','https://www.yahoo.com/')
+// if(searchEngine==='google'){
+//     link.innerText="Go to Google"
+//     link.setAttribute('href','https://www.google.com/')
+// }
+// else{
+//     link.innerText="Go to Yahoo"
+//     link.setAttribute('href','https://www.yahoo.com/')
 
-}
+// }
 
+
+//Creating elements ->dynamically
+
+
+// const heading=document.createElement("h1"); // add karna hai isko structure ke andar
+
+
+const screen=document.getElementById("root");
+const heading=document.createElement("h1");
+const description=document.createElement("p")
+heading.innerText="Jai shree Ram"
+description.innerText="welcome to bhopal"
+screen.append(heading,description);
+
+
+
+//Remove-> dynamically
+
+// const icecream=document.querySelector("h3")
+// icecream.remove();
+
+
+//parent -> child
+const section=document.querySelector("span");
+const gulabJamaun=document.querySelector("h3");
+
+
+section.removeChild(gulabJamaun);
 
 
 
