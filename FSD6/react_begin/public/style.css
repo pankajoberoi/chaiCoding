@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 1px 5px grey;
+    border-radius: 5px;
+    margin: 4px;
 }
 .nav-items{
     list-style: none;
@@ -9,4 +12,17 @@
 }
 .nav-items > li{
     padding: 10px;
+}
+.wrapper{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    text-align: center;
+    background-color: gray;
 }

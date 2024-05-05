@@ -1,22 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./Navbar";
-import List from "./List";
-import Footer from "./Footer";
+import ZomatoCard from "./components/ZomatoCard";
 
 
-
-function Zomato() {
-  return <div>
-
-    <Navbar />
-    <List />
-    <Footer />
-
-  </div>;
+function App() {
+  return (
+  <div>
+    <ZomatoCard/>
+    
+  </div>
+  )
 }
+
+
 
 
 let rootEl = document.getElementById("root");
 
-ReactDOM.render(<Zomato/>, rootEl);
+ReactDOM.render(<App/>, rootEl);

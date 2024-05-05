@@ -1,15 +1,15 @@
-
 import React from 'react'
-function Navbar() {
+
+ function Navbar() {
     return (
       
         <header>
           <nav className="nav">
             <img src="logo192.png" width={50} height={50}></img>
             <ul className="nav-items">
-              <li>Price</li>
-              <li>Price</li>
-              <li>Price</li>
+              <li>Pricing</li>
+              <li>About</li>
+              <li>support</li>
             </ul>
           </nav>
         </header>

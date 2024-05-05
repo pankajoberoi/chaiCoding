@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function List() {
+function List() {
     return (
       <div>
         <h1>Reason to learn react js</h1>
@@ -12,3 +12,5 @@ export default function List() {
       </div>
     );
   }
+
+export default List
