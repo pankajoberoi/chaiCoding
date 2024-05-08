@@ -183,11 +183,11 @@
 
 //strings and string templates
 
-const name1="Aman";
-const job="manager";
+// const name1="Aman";
+// const job="manager";
 
-const birthYear=2000;
-const currYear=2024;
+// const birthYear=2000;
+// const currYear=2024;
 
 // const age=(currYear-birthYear);
 // console.log(age)
@@ -217,14 +217,96 @@ const currYear=2024;
 // }
 
 
-let age=prompt("Enter your age");
-let eyesight=false;
-if(age>=18 && eyesight){
-    console.log("You can drive!!!!")
+// let age=prompt("Enter your age");
+// let eyesight=false;
+// if(age>=18 && eyesight){
+//     console.log("You can drive!!!!")
+// }
+// else{
+//     const yearsLeft=`Wait for next ${18-age} years`
+//     console.log(yearsLeft)
+// }
+
+//type conversion type coersion
+
+// let salary=Number(prompt("Enter Your salary"));
+
+// let updatedSalary=Number(salary)
+
+// let bonus=1000
+// console.log(salary+bonus)
+
+// console.log(typeof(NaN));
+
+// const birthYear='1991'
+// console.log(Number(birthYear),birthYear)
+// console.log(Number(birthYear)+18)
+
+
+// type coersion
+
+
+// console.log('I am ' + 23 + " years old")
+
+// console.log('23' - '10' + 3);
+
+// console.log('10' / '2')
+
+// let n = '1' + 1;
+// n=n-1;
+// console.log(n)
+
+// console.log('10' - '4' - '3' - 2 + '5') 
+
+
+//truthy and falsy valuessssss
+
+// falsyyy - > 0 , " " , undefined , null , NaN
+
+
+// let email;
+// console.log(email)
+
+// if(email){
+//     console.log(email)
+// }
+// else{
+//     console.log("andhe email daal")
+// }
+
+
+// console.log(Boolean(0))
+// console.log(Boolean( ))
+// console.log(Boolean(undefined))
+// console.log(Boolean(null))
+// console.log(Boolean(NaN))
+
+// console.log(Boolean("30"))
+
+
+
+// let height=Number(prompt("enter Your height"));
+
+// console.log(height)
+
+
+// if(height){
+//     console.log(`Your entered height is ${height} in cm`)
+// }
+// else{
+//     console.log("abe chinki height enter kar")
+// }
+
+
+// == vs ===
+
+let age=prompt("Enter your age")
+
+if(age === '18'){
+    console.log("bhai jawani chad gyi")
 }
 else{
-    const yearsLeft=`Wait for next ${18-age} years`
-    console.log(yearsLeft)
+    console.log("heheheh")
 }
 
 
