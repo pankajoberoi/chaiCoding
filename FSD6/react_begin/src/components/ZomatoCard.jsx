@@ -3,12 +3,11 @@ import Navbar from "./Navbar";
 import List from "./List";
 import Footer from "./Footer";
 
-function ZomatoCard() {
-  
+function ZomatoCard(data) {
     return (
     <div className="wrapper">
    
-     <Navbar/>
+     <Navbar Name={data.title}/>
      <List/>
      <Footer/>
     </div>

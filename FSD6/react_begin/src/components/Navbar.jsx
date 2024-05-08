@@ -1,6 +1,6 @@
 import React from 'react'
 
- function Navbar() {
+ function Navbar(props) {
     return (
      
         <header>
@@ -10,7 +10,7 @@ import React from 'react'
               <li>Pricing</li>
               <li>About</li>
               <li>support</li>
-              <li>{"Name"}</li>
+              <li><b>{props.Name}</b></li>
             </ul>
           </nav>
         </header>

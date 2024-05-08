@@ -163,10 +163,68 @@
 //               currentYear+= true
 
 
+// const markHeight=1.69
+// const markWeight=78
+
+// const johnHeight=1.95
+// const johnWeight=150
+
+// const JohnBmi=johnWeight/(johnHeight**2)
+
+// const MarkBmi=markWeight/(markHeight**2)
 
 
+// console.log("Bmi of john is " + JohnBmi + " and Bmi of mark is " + MarkBmi);
+
+// const markHigherBmi=MarkBmi>JohnBmi;
+
+// console.log(markHigherBmi);
 
 
+//strings and string templates
 
+const name1="Aman";
+const job="manager";
+
+const birthYear=2000;
+const currYear=2024;
+
+// const age=(currYear-birthYear);
+// console.log(age)
+
+// const information="I am " + name1 + "\n my job title is" + job + " and my age is " + (currYear-birthYear)
+
+// console.log(information);
+
+
+// // string templates -> ES6
+
+// // templates litrals ``
+// const info=`I am ${name1} 
+// my job title is ${job} and my age is ${(currYear-birthYear)}`;
+
+// console.log(info)
+
+// let age=prompt("Enter your age");
+
+// if(age>=18){
+//     console.log("jaa vote dee")
+// }
+// else{
+//     console.log("mera bacha hai tu!!")
+
+
+// }
+
+
+let age=prompt("Enter your age");
+let eyesight=false;
+if(age>=18 && eyesight){
+    console.log("You can drive!!!!")
+}
+else{
+    const yearsLeft=`Wait for next ${18-age} years`
+    console.log(yearsLeft)
+}
 
 
