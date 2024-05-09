@@ -87,30 +87,30 @@ let button=document.querySelector(".btn");
 // })
 
 
-let modeBtn=document.querySelector(".btn")
-let currMode="light"
-let body=document.querySelector("body");
+// let modeBtn=document.querySelector(".btn")
+// let currMode="light"
+// let body=document.querySelector("body");
 
 
-const handleClick =()=>{
-    if(currMode === "light"){
-        currMode="dark";
-        console.log(currMode);
-        // document.querySelector("body").style.backgroundColor="black"
-        body.classList.add("dark") 
-        body.classList.remove("light")
+// const handleClick =()=>{
+//     if(currMode === "light"){
+//         currMode="dark";
+//         console.log(currMode);
+//         // document.querySelector("body").style.backgroundColor="black"
+//         body.classList.add("dark") 
+//         body.classList.remove("light")
 
-    }
-    else{
-        currMode="light";
-        console.log(currMode)
-        // document.querySelector("body").style.backgroundColor="white"
-        body.classList.add("light")
-        body.classList.remove("dark")
-    }
-}
+//     }
+//     else{
+//         currMode="light";
+//         console.log(currMode)
+//         // document.querySelector("body").style.backgroundColor="white"
+//         body.classList.add("light")
+//         body.classList.remove("dark")
+//     }
+// }
 
-modeBtn.addEventListener("click",handleClick)
+// modeBtn.addEventListener("click",handleClick)
 
 
 

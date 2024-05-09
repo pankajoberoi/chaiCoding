@@ -302,11 +302,14 @@
 
 let age=prompt("Enter your age")
 
-if(age === '18'){
+if('18' == 18){
     console.log("bhai jawani chad gyi")
 }
 else{
     console.log("heheheh")
 }
+
+
+
 
 
