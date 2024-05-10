@@ -300,16 +300,88 @@
 
 // == vs ===
 
-let age=prompt("Enter your age")
+// let age=prompt("Enter your age")
 
-if('18' == 18){
-    console.log("bhai jawani chad gyi")
+// if('18' == 18){
+//     console.log("bhai jawani chad gyi")
+// }
+// else{
+//     console.log("heheheh")
+// }
+
+
+// Boolean operator  And OR Not   && || !
+
+
+// const hasDrivingLicense=false;
+// const goodVision=true;
+// const isTired=false;
+
+// console.log(hasDrivingLicense && goodVision);
+// console.log(hasDrivingLicense || goodVision);
+// console.log(!hasDrivingLicense);
+
+
+// if(hasDrivingLicense && goodVision || isTired){
+//     console.log("jaa bai chlale gaadi")
+// }
+// else{
+//     console.log("rende ghar baith")
+// }
+
+
+// let TeamA=(97+112+101)/3;
+// let TeamB=(109+95+106)/3;
+
+// console.log("Team A ka score",TeamA)
+// console.log("Team B ka score",TeamB)
+
+// if(TeamA>TeamB && TeamA>100){
+//     console.log("TeamA haddippaa!!")
+// }
+// else if(TeamB>TeamA && TeamB>100){
+//     console.log("TeamB haddippaa!!")
+// }
+// else if(TeamA==TeamB && TeamA>100 && TeamB>100){
+//     console.log("mehnat waste!!")
+// }
+// else{
+//     console.log("no result!!!!!")
+// }
+
+
+// Switch case
+
+let day=prompt("enter the day");
+
+switch(day){
+    case 'monday':
+        console.log("push day!!!")
+        break;
+    
+    case 'tuesday':
+        console.log("pull day!!!!")
+        break;
+
+    case 'wednesday':
+    case 'thursday':
+        console.log("bhai mera rest chal rha hai")
+        break;
+
+    case 'friday':
+        console.log("leg day!!")
+        break;
+    case 'saturday':
+        console.log("cardio")
+        break;
+    case 'sunday':
+        console.log("aaj toh gym hi band hai heheheh")
+        break;
+    default:
+        console.log("abe andha hai kya!!")
+
+
 }
-else{
-    console.log("heheheh")
-}
-
-
 
 
 
