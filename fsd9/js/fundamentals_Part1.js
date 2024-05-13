@@ -352,36 +352,87 @@
 
 // Switch case
 
-let day=prompt("enter the day");
+// let day=prompt("enter the day");
 
-switch(day){
-    case 'monday':
-        console.log("push day!!!")
-        break;
+// switch(day){
+//     case 'monday':
+//         console.log("push day!!!")
+//         break;
     
-    case 'tuesday':
-        console.log("pull day!!!!")
-        break;
+//     case 'tuesday':
+//         console.log("pull day!!!!")
+//         break;
 
-    case 'wednesday':
-    case 'thursday':
-        console.log("bhai mera rest chal rha hai")
-        break;
+//     case 'wednesday':
+//     case 'thursday':
+//         console.log("bhai mera rest chal rha hai")
+//         break;
 
-    case 'friday':
-        console.log("leg day!!")
-        break;
-    case 'saturday':
-        console.log("cardio")
-        break;
-    case 'sunday':
-        console.log("aaj toh gym hi band hai heheheh")
-        break;
-    default:
-        console.log("abe andha hai kya!!")
-
-
-}
+//     case 'friday':
+//         console.log("leg day!!")
+//         break;
+//     case 'saturday':
+//         console.log("cardio")
+//         break;
+//     case 'sunday':
+//         console.log("aaj toh gym hi band hai heheheh")
+//         break;
+//     default:
+//         console.log("abe andha hai kya!!")
 
 
+// }
 
+// statement vs expression
+
+// expression -> value generate-> operators (total gross profit - salaries)
+//  variable -> clg
+
+const currYear=2024;
+const birthYear=2001;
+
+// console.log(currYear-birthYear)  
+
+// let hasDrivingLicense=false;
+// let eyesight=true;
+
+// console.log(hasDrivingLicense && eyesight
+// )  
+
+// statements
+
+// if(true){
+//     console.log("xyz")
+// }
+
+// function sample(){
+//     attendance -> 75%
+//     entry 
+//     no entry
+// }
+
+
+// template literals -> expression
+
+// const calAge=`My age is ${(currYear-birthYear)}
+// `
+// console.log(calAge)
+
+//ternary operator -> expression -> value
+
+// const shakal=true;
+
+// (age>18 && shakal)?console.log("chalo club") : console.log("thele pe baith") 
+// const age=111;
+
+// const drink=(age>18)?'Wine':'Water'
+
+// console.log(`i'll serve ${drink} to you`)
+
+
+
+// collection of logic likhoge  -> action 
+
+// if{} else{} 
+// function 
+// class
