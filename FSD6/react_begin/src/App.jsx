@@ -1,28 +1,29 @@
-import React from 'react'
-import Toggle from './components/Toggle'
-import './style.css'
-import Input from './components/Input'
-// import ZomatoCard from './components/ZomatoCard'
-// import Counter from './components/Counter'
-// import Card from './Cards'
+// import React from 'react'
+// import Toggle from './components/Toggle'
+// import './style.css'
+// import Input from './components/Input'
+// import Api from './components/Api'
+// // import ZomatoCard from './components/ZomatoCard'
+// // import Counter from './components/Counter'
+// // import Card from './Cards'
 
-function App() {
-    // let yourName=prompt("Enter Your name")
-  return (
-    <div >
+// function App() {
+//     // let yourName=prompt("Enter Your name")
+//   return (
+//     <div >
         
+//         <Api/>
+//         {/* <Input/> */}
+//         {/* <Toggle/>  */}
+//         {/* <Counter/> */}
+//         {/* <Card/> */}
+//         {/* {yourName?<ZomatoCard title={yourName}/>:<h1>Please Enter Your name first</h1>} */}
 
-        <Input/>
-        {/* <Toggle/>  */}
-        {/* <Counter/> */}
-        {/* <Card/> */}
-        {/* {yourName?<ZomatoCard title={yourName}/>:<h1>Please Enter Your name first</h1>} */}
+//     </div>
+//   )
+// }
 
-    </div>
-  )
-}
-
-export default App
+// export default App
 
 
 
@@ -52,4 +53,25 @@ export default App
 // }
 
 // export default App
+
+import React from 'react'
+import {BrowserRouter,Route,Routes}  from 'react-router-dom'
+import Home from './Home'
+import About from './About'
+import NavBar from './NavBar'
+const App = () => {
+  return (
+    <div>
+      <NavBar/>
+      <Routes>
+        <Route   path='/'  element={<Home/>}/>
+        <Route   path='/about'  element={<About/>}/>
+
+      </Routes>
+    </div>
+  )
+}
+
+export default App
+
 
