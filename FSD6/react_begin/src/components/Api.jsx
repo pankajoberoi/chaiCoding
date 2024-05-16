@@ -6,10 +6,12 @@ function Api() {
     let [hunger,setHunger]=useState(false)
 
     useEffect(()=>{
-        fetch('https://dummyjson.com/recipes')
+      fetch('https://dummyjson.com/recipes')
         .then(res => res.json())
         .then(console.log);
     },[hunger])
+
+    
     
 
 

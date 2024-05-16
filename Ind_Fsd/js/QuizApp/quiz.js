@@ -1,36 +1,42 @@
-const questions =[{
-    question:"Which one is the language is for front-end?",
-    answers:[
-        {text:"html",correct:true},
-        {text:"firebase",correct:false},
-        {text:"node",correct:false},
-        {text:"express",correct:false},
-    ]
-},{
-    question:"Which one is the language for front-end",
-    answers:[
-        {text:"html",correct:false},
-        {text:"html",correct:true},
-        {text:"html",correct:false},
-        {text:"html",correct:false},
-    ]
-},{
-    question:"Which one is the language for front-end",
-    answers:[
-        {text:"html",correct:true},
-        {text:"html",correct:false},
-        {text:"html",correct:false},
-        {text:"html",correct:false},
-    ]
-},{
-    question:"Which one is the language for front-end",
-    answers:[
-        {text:"html",correct:true},
-        {text:"html",correct:false},
-        {text:"html",correct:false},
-        {text:"html",correct:false},
-    ]
-}]
+const questions=[
+    {
+        question:"which one from these is language for front-end?",
+        answers:[
+            {text:"html" , correct:true},
+            {text:"node" , correct:false},
+            {text:"express" , correct:false},
+            {text:"c++" , correct:false},
+
+        ]
+    },
+    {
+        question: "which is smallest continent in world?",
+        answers: [
+            {text:"Asia" , correct:false},
+            {text:"Australia" , correct:true},
+            {text:"Arctic" , correct:false},
+            {text:"Africa" , correct:false},
+        ]
+    },
+    {
+        question: "which is language is server side?",
+        answers: [
+            {text:"Node" , correct:true},
+            {text:"html" , correct:false},
+            {text:"css" , correct:false},
+            {text:"Js" , correct:false},
+        ]
+    },
+    {
+        question: "which is largest desert in the world?",
+        answers: [
+            {text:"kalahari" , correct:false},
+            {text:"Gobi" , correct:false},
+            {text:"sahara" , correct:false},
+            {text:"Antarctica" , correct:true},
+        ]
+    }
+];
 const questionElement=document.getElementById("question")
 const answerButton=document.getElementById("answer-buttons")
 const nextButton=document.getElementById("next-btn")
@@ -86,10 +92,51 @@ function selectAnswer(event){
     else{
         selectedBtn.classList.add("incorrect");
     }
+    Array.from(answerButton.children).forEach((button)=>{
+        if(button.dataset.correct==="true")  {
+          button.classList.add("correct")
+        }
+        button.disabled=true;
+      })
 
+    
+    nextButton.style.display="block"
+    nextButton.innerHTML="Next"
 
 
 }
+
+function showScore(){
+    resetState()
+    questionElement.innerHTML=`Your Score is ${score}`
+    nextButton.innerHTML="Play again"
+    nextButton.style.display="block"
+}
+
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex<questions.length){
+        showQuestion()
+    }
+    else{
+        showScore()
+    }
+
+}
+
+
+nextButton.addEventListener("click",()=>{
+    if(currentQuestionIndex<questions.length){
+        handleNextButton();
+    }
+    else{
+        startQuiz()
+    }
+})
+
+
+
 
 
 startQuiz()
