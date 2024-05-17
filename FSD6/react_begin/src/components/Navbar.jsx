@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
  function Navbar(props) {
     return (
@@ -18,4 +19,22 @@ import React from 'react'
     );
   }
 
-  export default Navbar
+ function Navbar1(){
+    return (
+      <div>
+        <Link to='/'><li>Home</li></Link>
+        <Link to='/about'><li>About</li></Link>
+        
+        
+      </div>
+    )
+   }
+
+   export {Navbar,Navbar1}
+
+  
+   
+
+
+
+   

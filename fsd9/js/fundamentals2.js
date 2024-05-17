@@ -1,7 +1,7 @@
 // JS-> loosely typed language -> strict action X 
 // Js -> env -> browser -> x
 // 'use strict'
-// -> strict
+// -> strict tareeke see kaam hogga
 
 // let drivingLicense=false;
 // let passTest=true;
@@ -118,31 +118,89 @@
 //     console.log(glass)
 
 
-const CalAvg=(R1,R2,R3)=>{
-    return (R1+R2+R3)/3
-}
+// const CalAvg=(R1,R2,R3)=>{
+//     return (R1+R2+R3)/3
+// }
 
-const AvgOfChennai=CalAvg(85,44,51);
-const AvgOfKolkata=CalAvg(23,24,21);
+// const AvgOfChennai=CalAvg(85,44,51);
+// const AvgOfKolkata=CalAvg(23,24,21);
 
-console.log("Average of chennai is " + AvgOfChennai)
-console.log("Average of kolkata is " + AvgOfKolkata)
-
-
-const checkWinner=(TeamA,TeamB)=>{
-    if(TeamA>(TeamB*2)){
-        console.log("Team A which is chennai winns ")
-    }
-    else if(TeamB>(TeamA*2)){
-        console.log("Team B which is kolkata wins")
-    }
-    else{
-        console.log("no one wins")
-    }
-}
+// console.log("Average of chennai is " + AvgOfChennai)
+// console.log("Average of kolkata is " + AvgOfKolkata)
 
 
-checkWinner(AvgOfChennai,AvgOfKolkata)
+// const checkWinner=(TeamA,TeamB)=>{
+//     if(TeamA>(TeamB*2)){
+//         console.log("Team A which is chennai winns ")
+//     }
+//     else if(TeamB>(TeamA*2)){
+//         console.log("Team B which is kolkata wins")
+//     }
+//     else{
+//         console.log("no one wins")
+//     }
+// }
+
+
+// checkWinner(AvgOfChennai,AvgOfKolkata)
+
+
+
+// Arrays -> first Data structure
+
+
+// const name="chinku"
+// const name1="pinki"
+// const name2="tinku"
+
+// const friends=["Pankaj","Aastha","Aman"]
+
+// console.log(friends)
+
+// console.log(friends[2])//random acces using index
+
+// const salaries=[200,250,300]
+
+// console.log(salaries)
+
+
+// const birthYear= new Array(1990,1995,2001,2005)
+
+// console.log(birthYear)
+
+
+// Array -> inbuilt
+
+
+
+// const chairs=friends.length
+
+// console.log(chairs)
+
+// console.log(friends.length)
+
+// index
+
+// console.log("Total index are",friends.length-1)
+
+// friends[1]="monu"
+
+// //Array jo hai mutable hai
+// console.log(friends)
+
+// const salaries=[110,200,300];
+
+// console.log(salaries)
+
+//heterogenous
+
+const friends=["Pankaj","Aastha","Aman"]
+const person=["Mahi",7,(2024-1985),true,friends]
+
+console.log(person[4][1])
+
+
+
 
 
 
