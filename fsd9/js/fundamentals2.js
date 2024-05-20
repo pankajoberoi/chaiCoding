@@ -194,10 +194,105 @@
 
 //heterogenous
 
-const friends=["Pankaj","Aastha","Aman"]
-const person=["Mahi",7,(2024-1985),true,friends]
+// const friends=["Pankaj","Aastha","Aman"]
+// const person=["Mahi",7,(2024-1985),true,friends]
 
-console.log(person[4][1])
+// console.log(person[4][1])
+
+// const arr=[1990,1995,2001]
+
+
+// const calAge=function(birthYear){
+//     return 2024-birthYear
+// }
+
+// const age1=calAge(arr[0])
+// const age2=calAge(arr[1])
+// const age3=calAge(arr[2])
+
+// const ages=[age1,age2,age3]
+
+// console.log("Ages are => ",ages);
+
+
+
+// Arrays Methods
+// const friends=["Pankaj","Aastha","Aman"]
+
+// const dost=prompt("Enter your new friend")
+
+// console.log(dost);
+
+// const newLenght=friends.push(dost)
+
+// console.log(newLenght);
+// console.log(friends)
+
+
+// friends.unshift(dost);
+
+// console.log(friends)
+
+
+// const friends=["Pankaj","Aastha","Aman"]
+
+
+
+// const removedItem=friends.pop();
+
+// console.log(removedItem)
+// console.log(friends)
+
+
+// const removedFromStart=friends.shift();
+
+// console.log(removedFromStart)
+// console.log(friends)
+
+
+
+// const friends=["Pankaj","Aastha",123]
+
+
+// console.log(friends.indexOf('Aman'))  
+
+// console.log(friends.includes(123))  
+
+
+// const Pay=[125,555,44]
+
+// const calTip=function(bill){
+//     return bill >=50 && bill <= 300 ? bill*0.15 : bill*0.20
+// }
+
+// const Tip=[calTip(Pay[0]),calTip(Pay[1]),calTip(Pay[2])];
+
+// const TotalBill=[Pay[0]+Tip[0],
+//                 Pay[1]+Tip[1],
+//                 Pay[2]+Tip[2]]
+
+
+// console.log(TotalBill)
+
+
+
+// Objects->Key:value pair
+
+
+const PersonInfo={
+    Name:"Monu",
+    age:30,
+    salary:10000,
+    JobStatus:true,
+    Profession:"SDE"
+}
+
+
+console.log(PersonInfo);
+
+console.log(PersonInfo.Name)
+
+
 
 
 

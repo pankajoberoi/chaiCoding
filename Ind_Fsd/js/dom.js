@@ -88,12 +88,12 @@
 // const heading=document.createElement("h1"); // add karna hai isko structure ke andar
 
 
-const screen=document.getElementById("root");
-const heading=document.createElement("h1");
-const description=document.createElement("p")
-heading.innerText="Jai shree Ram"
-description.innerText="welcome to bhopal"
-screen.append(heading,description);
+// const screen=document.getElementById("root");
+// const heading=document.createElement("h1");
+// const description=document.createElement("p")
+// heading.innerText="Jai shree Ram"
+// description.innerText="welcome to bhopal"
+// screen.append(heading,description);
 
 
 
@@ -104,13 +104,25 @@ screen.append(heading,description);
 
 
 //parent -> child
-const section=document.querySelector("span");
-const gulabJamaun=document.querySelector("h3");
+// const section=document.querySelector("span");
+// const gulabJamaun=document.querySelector("h3");
 
 
-section.removeChild(gulabJamaun);
+// section.removeChild(gulabJamaun);
 
 
+
+// const FirstName=document.getElementById("Name")
+// const Btn=document.getElementById("submit")
+
+
+
+
+// FirstName.addEventListener("change",(event)=>{
+//     console.log(event)
+//     const YourName=FirstName.value;
+//     console.log(YourName)
+// })
 
 
 
