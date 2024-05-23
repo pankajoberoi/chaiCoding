@@ -72,24 +72,104 @@
 // }
 
 
-function getData(dataId){
-    setTimeout(()=>{
-        console.log(dataId,"data");
-    },3000)
+// function getData(dataId,GetCallBack){
     
+//     setTimeout(()=>{
+//         console.log(dataId,"data");
+//         if(GetCallBack){
+//             GetCallBack();
+//         }
+        
+//     },3000)
+    
+// }
+
+//callback hell->dom like structure
+// console.log("getting data 1 ...........")
+// getData(1,()=>{
+//     console.log("getting data 2 ...........")
+//     getData(2,()=>{
+//         console.log("getting data 3 ...........")
+//         getData(3,()=>{
+//             console.log("getting data 4 ...........")
+//             getData(4) 
+//         })
+//     })
+// })
+
+
+
+// promises -> object -> success -> reject
+// const result=new Promise((resolve,reject)=>{
+//     console.log("iphone nhi aa paya");
+//     // resolve("success of your delivery")
+//     reject("transport issue")
+
+// })
+
+// console.log(result)
+
+
+// function getData(dataId,GetCallBack){
+//     return new Promise((resolve,reject)=>{
+
+//         setTimeout(()=>{
+//             console.log(dataId,"data");
+//             // resolve("successsssss heheheheeh")
+//             reject("network issue alien aa gayee")
+//             if(GetCallBack){
+//                 GetCallBack();
+//             }
+            
+//         },10000)
+
+//     })
+   
+    
+// }
+
+// const result = getData(1)
+
+
+
+// three states of promises fullfil pending reject
+
+
+const getOrder = () =>{
+
+    return new Promise((resolve,reject)=>{
+        console.log(" i am new order ")
+        setTimeout(()=>{
+            resolve("success");
+            // reject("Out of stock")
+        },5000)
+        
+    })
+
 }
 
-getData(1)
-getData(2)
-getData(3)
+const result=getOrder()
+
+result.then((res)=>{
+    console.log(res)
+    console.log("aa gya bhai iphone dalde story chak de fatte")
+})
+
+result.catch((err)=>{
+    console.log(err)
+    console.log("bhai paise wapis kar mere !!!!!")
+})
 
 
 
-// getData(1);
 
-// getData(2)
 
-// getData(3)
+
+
+
+
+
+
 
 
 
