@@ -292,7 +292,93 @@ console.log(PersonInfo);
 
 console.log(PersonInfo.Name)
 
+// DOT VS BRACKET
 
+// console.log(PersonInfo.salary);
+// console.log(PersonInfo['age']);
+
+
+// Dot vs Bracket . => direct key name , []=>expression/key
+
+
+// let key="firstName"
+// console.log(PersonInfo.firstName);
+
+// let key2="Name";
+
+// console.log(PersonInfo['last' + key2]);
+
+
+
+// let InputKey=prompt("Enter any key");
+
+// console.log(PersonInfo.age);//direct key
+
+// console.log(PersonInfo[InputKey]);//expression 
+
+
+// console.log(PersonInfo.key);//undefined
+
+// console.log(PersonInfo[InputKey]);
+
+//expression =-> value / variable /prompt /operator/boolena
+
+
+// let hello;
+
+// console.log(hello);
+
+
+// const PersonInfo = {
+//     firstName:"pankaj",
+//     lastName:"oberoi",
+//     age : 30,
+//     salary : 4500,
+//     jobStatus : true
+// }
+
+// const intrestedIn=prompt("enter the info u want");
+
+// if(PersonInfo[intrestedIn]){
+//     console.log(PersonInfo[intrestedIn]);
+// }
+// else{
+//     console.log("wrong request");
+// }
+
+
+// PersonInfo.location="Bhopal"
+// PersonInfo.instaId="traveler.apk"
+
+// console.log(PersonInfo);
+
+
+// const maritalStatus = prompt("enter your marital status")
+
+// let shadi = [PersonInfo.maritalStatus]
+
+// if (PersonInfo[maritalStatus]) {
+//     console.log(PersonInfo[maritalStatus]);
+// }
+// else (
+//     console.log("shadi krle")
+// )
+
+// console.log(PersonInfo);
+
+
+
+const anyRandomThing = prompt("ek random baat bol")
+
+if (PersonInfo[anyRandomThing]) {
+    console.log(PersonInfo[anyRandomThing]);
+}
+
+else {
+    PersonInfo[anyRandomThing] = prompt("Enter the valuee")
+}
+
+console.log(PersonInfo);
 
 
 
