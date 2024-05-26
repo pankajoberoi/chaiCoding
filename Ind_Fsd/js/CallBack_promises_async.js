@@ -84,6 +84,12 @@
     
 // }
 
+// getData(1)
+// getData(2)
+// getData(3)
+// getData(4)
+
+
 //callback hell->dom like structure
 // console.log("getting data 1 ...........")
 // getData(1,()=>{
@@ -115,8 +121,8 @@
 
 //         setTimeout(()=>{
 //             console.log(dataId,"data");
-//             // resolve("successsssss heheheheeh")
-//             reject("network issue alien aa gayee")
+//             resolve("successsssss heheheheeh")
+//             // reject("network issue alien aa gayee")
 //             if(GetCallBack){
 //                 GetCallBack();
 //             }
@@ -135,30 +141,113 @@
 // three states of promises fullfil pending reject
 
 
-const getOrder = () =>{
+// const getOrder = () =>{
 
-    return new Promise((resolve,reject)=>{
-        console.log(" i am new order ")
-        setTimeout(()=>{
-            resolve("success");
-            // reject("Out of stock")
-        },5000)
+//     return new Promise((resolve,reject)=>{
+//         console.log(" i am new order ")
+//         setTimeout(()=>{
+//             resolve("successfull");
+//             // reject("Out of stock")
+//         },5000)
         
+//     })
+
+// }
+
+// const result=getOrder()
+
+// result.then((res)=>{
+//     console.log(res)
+//     console.log("aa gya bhai iphone dalde story chak de fatte")
+// })
+
+// result.catch((err)=>{
+//     console.log(err)
+//     console.log("bhai paise wapis kar mere !!!!!")
+// })
+
+// promise -> Object-> security -> exe? ke nhi hua
+// function asyncFunction1(){//security message  -> get request
+//     return new Promise((resolve,reject)=>{
+
+//         setTimeout(()=>{
+//             console.log("some data 1 from database.....")
+//             resolve("done dna done")
+//             // reject("wrong info");
+//         },5000)
+    
+
+//     })
+// }
+// function asyncFunction2(){//security message  -> get request
+//     return new Promise((resolve,reject)=>{
+
+//         setTimeout(()=>{
+//             console.log("some data 2 from database.....")
+//             resolve("balle balle")
+//         },5000)
+    
+
+//     })
+// }
+
+// let R1=asyncFunction1();
+// R1.then((res)=>{
+//     console.log(res);
+//     let R2=asyncFunction2();
+//     R2.then((res)=>{
+//         console.log(res);
+//     })
+// })
+
+// R1.catch((err)=>{
+//     console.log(err);
+// })
+
+// promise chaining
+// asyncFunction1().then((res)=>{
+//     console.log(res);
+//     asyncFunction2().then((res)=>{
+//         console.log(res);
+//     })
+// })
+
+
+
+function getData(dataId){
+    return new Promise((resolve,reject)=>{
+
+        setTimeout(()=>{
+            // console.log(dataId,"data");
+            // resolve("successsssss heheheheeh")
+            reject("network issue")
+        },3000)
+
     })
-
+   
+    
 }
-
-const result=getOrder()
-
-result.then((res)=>{
+console.log("getting data 1......")
+getData(1).then((res)=>{
     console.log(res)
-    console.log("aa gya bhai iphone dalde story chak de fatte")
+    console.log("getting data 2 ......")
+    getData(2).then((res)=>{
+        console.log(res)
+        console.log("getting data 3 ......")
+        getData(3).then((res)=>{
+            console.log(res)
+        })
+    })
 })
 
-result.catch((err)=>{
-    console.log(err)
-    console.log("bhai paise wapis kar mere !!!!!")
-})
+
+
+
+
+
+
+
+
 
 
 
