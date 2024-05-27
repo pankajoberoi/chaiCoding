@@ -33,6 +33,7 @@ import About from './components/About'
 import {Navbar1} from './components/Navbar'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import List from './components/List'
+import Product from './components/Product'
  
 function App() {
   return (
@@ -41,7 +42,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/about/contact' element={<List/>}/>
+        <Route path='/about/:Fname/' element={<About/>}/>
+        <Route path='/product' element={<Product/>}/>
+        <Route path='/product/:productId/:Qty' element={<Product/>}/>
       </Routes>
     </div>
   )

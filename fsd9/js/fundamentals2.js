@@ -1,4 +1,4 @@
-// JS-> loosely typed language -> strict action X 
+// JS-> loosely typed language -> strict action X
 // Js -> env -> browser -> x
 // 'use strict'
 // -> strict tareeke see kaam hogga
@@ -19,7 +19,7 @@
 
 // Js -> Functions -> block a code to perform a particular task
 
-// code -> likh diya -> reuse 
+// code -> likh diya -> reuse
 
 // let greeting = "Jai shree ram"
 // function Logger(){
@@ -33,9 +33,8 @@
 // console.log(output)
 // console.log(message)
 
-
-// 1.Parameters ko receive 
-// 2. output return 
+// 1.Parameters ko receive
+// 2. output return
 
 // DRY
 // function fruitProcessor(apples,oranges){
@@ -49,16 +48,14 @@
 // const glass=fruitProcessor(2,3)
 // console.log(glass)
 
-// console.log(fruitProcessor(4,5)) 
+// console.log(fruitProcessor(4,5))
 
 // const appleJuice=fruitProcessor(5,0)
 // console.log(appleJuice)
 
-
 // function declaration vs function expreesion
 
-
-// console.log(calAge1(2000))   
+// console.log(calAge1(2000))
 // let age1= calAge1(2001)
 // console.log(age1)
 
@@ -66,31 +63,25 @@
 //     return 2024-birthYear;
 // }
 
-
-
 // const age2=calAge2(2001)
 // console.log(age2)
 
-//  console.log(calAge2(2000)) 
+//  console.log(calAge2(2000))
 
 // const calAge2=function(birthYear){
 //     return 2024-birthYear
 // }
 
-
 // function expression vs arrow function
-
 
 // const calAge2=function(birthYear){
 //     return 2024-birthYear
 // }
 // console.log(calAge2(2000))
 
-
 // const calAge3= birthYear => 2024-birthYear
 
 // console.log(calAge3(2001))
-
 
 // const Retirement = (birthYear,name) => {
 //     let age=2024-birthYear;
@@ -100,7 +91,7 @@
 
 // console.log(Retirement(2000,"Pankaj"))
 
-// Function calling inside a function => higher order function 
+// Function calling inside a function => higher order function
 
 // const cutpieces=(fruit)=>{
 //     return fruit*4
@@ -108,15 +99,14 @@
 
 // function fruitProcessor(apples,oranges){
 //         let applePieces=cutpieces(apples)
-//         let orangePieces=cutpieces(oranges)    
+//         let orangePieces=cutpieces(oranges)
 //         const juice = `Juice with ${applePieces} applePices and ${orangePieces} orangePices`
-    
+
 //         return juice;
 //     }
-    
+
 //     const glass=fruitProcessor(2,3)
 //     console.log(glass)
-
 
 // const CalAvg=(R1,R2,R3)=>{
 //     return (R1+R2+R3)/3
@@ -127,7 +117,6 @@
 
 // console.log("Average of chennai is " + AvgOfChennai)
 // console.log("Average of kolkata is " + AvgOfKolkata)
-
 
 // const checkWinner=(TeamA,TeamB)=>{
 //     if(TeamA>(TeamB*2)){
@@ -141,13 +130,9 @@
 //     }
 // }
 
-
 // checkWinner(AvgOfChennai,AvgOfKolkata)
 
-
-
 // Arrays -> first Data structure
-
 
 // const name="chinku"
 // const name1="pinki"
@@ -163,15 +148,11 @@
 
 // console.log(salaries)
 
-
 // const birthYear= new Array(1990,1995,2001,2005)
 
 // console.log(birthYear)
 
-
 // Array -> inbuilt
-
-
 
 // const chairs=friends.length
 
@@ -201,7 +182,6 @@
 
 // const arr=[1990,1995,2001]
 
-
 // const calAge=function(birthYear){
 //     return 2024-birthYear
 // }
@@ -213,8 +193,6 @@
 // const ages=[age1,age2,age3]
 
 // console.log("Ages are => ",ages);
-
-
 
 // Arrays Methods
 // const friends=["Pankaj","Aastha","Aman"]
@@ -228,36 +206,27 @@
 // console.log(newLenght);
 // console.log(friends)
 
-
 // friends.unshift(dost);
 
 // console.log(friends)
 
-
 // const friends=["Pankaj","Aastha","Aman"]
-
-
 
 // const removedItem=friends.pop();
 
 // console.log(removedItem)
 // console.log(friends)
 
-
 // const removedFromStart=friends.shift();
 
 // console.log(removedFromStart)
 // console.log(friends)
 
-
-
 // const friends=["Pankaj","Aastha",123]
 
+// console.log(friends.indexOf('Aman'))
 
-// console.log(friends.indexOf('Aman'))  
-
-// console.log(friends.includes(123))  
-
+// console.log(friends.includes(123))
 
 // const Pay=[125,555,44]
 
@@ -271,35 +240,28 @@
 //                 Pay[1]+Tip[1],
 //                 Pay[2]+Tip[2]]
 
-
 // console.log(TotalBill)
-
-
 
 // Objects->Key:value pair
 
+// const PersonInfo={
+//     Name:"Monu",
+//     age:30,
+//     salary:10000,
+//     JobStatus:true,
+//     Profession:"SDE"
+// }
 
-const PersonInfo={
-    Name:"Monu",
-    age:30,
-    salary:10000,
-    JobStatus:true,
-    Profession:"SDE"
-}
+// console.log(PersonInfo);
 
-
-console.log(PersonInfo);
-
-console.log(PersonInfo.Name)
+// console.log(PersonInfo.Name)
 
 // DOT VS BRACKET
 
 // console.log(PersonInfo.salary);
 // console.log(PersonInfo['age']);
 
-
 // Dot vs Bracket . => direct key name , []=>expression/key
-
 
 // let key="firstName"
 // console.log(PersonInfo.firstName);
@@ -308,14 +270,11 @@ console.log(PersonInfo.Name)
 
 // console.log(PersonInfo['last' + key2]);
 
-
-
 // let InputKey=prompt("Enter any key");
 
 // console.log(PersonInfo.age);//direct key
 
-// console.log(PersonInfo[InputKey]);//expression 
-
+// console.log(PersonInfo[InputKey]);//expression
 
 // console.log(PersonInfo.key);//undefined
 
@@ -323,11 +282,9 @@ console.log(PersonInfo.Name)
 
 //expression =-> value / variable /prompt /operator/boolena
 
-
 // let hello;
 
 // console.log(hello);
-
 
 // const PersonInfo = {
 //     firstName:"pankaj",
@@ -346,12 +303,10 @@ console.log(PersonInfo.Name)
 //     console.log("wrong request");
 // }
 
-
 // PersonInfo.location="Bhopal"
 // PersonInfo.instaId="traveler.apk"
 
 // console.log(PersonInfo);
-
 
 // const maritalStatus = prompt("enter your marital status")
 
@@ -366,31 +321,106 @@ console.log(PersonInfo.Name)
 
 // console.log(PersonInfo);
 
+// const anyRandomThing = prompt("ek random baat bol")
 
+// if (PersonInfo[anyRandomThing]) {
+//     console.log(PersonInfo[anyRandomThing]);
+// }
 
-const anyRandomThing = prompt("ek random baat bol")
+// else {
+//     PersonInfo[anyRandomThing] = prompt("Enter the valuee")
+// }
 
-if (PersonInfo[anyRandomThing]) {
-    console.log(PersonInfo[anyRandomThing]);
+// console.log(PersonInfo);
+
+// Loops
+
+// for ,while ,do while
+
+//find even number btw 1 to 20 range
+
+// for(let i=1;i<=20;i++){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+
+// }
+
+// while loop
+
+// let user1=25;
+// let user2;
+
+// let attempts=0
+
+// while(true){
+//     user2=Number(prompt("enter Your guessed value"));
+//     attempts++;
+
+//     if(user2>user1){
+//         console.log("entered value is greater than original")
+//     }
+//     else if(user2<user1){
+//         console.log("entered value is smaller than original")
+//     }
+//     else{
+//         console.log("congo!!!!!!")
+//         break;
+//     }
+// }
+
+// console.log("total attempts ",attempts);
+
+// do while
+
+// let kamai=0;
+// let customerStatus
+// do{
+//     kamai=kamai+50;
+//     customerStatus=prompt("enter customer status yes/no");
+// }while(customerStatus=='yes')
+
+// console.log("aaj ke din ki kamai is ",kamai);
+
+// for of , for in , foreach
+
+// for of -> strings , array
+
+// let str = "JavaScript"
+// let size=0
+
+// for(let val of str){
+//     console.log("val=",val);
+//     size++;
+// }
+// console.log("size of your string is ",size);
+
+// for in-> use  for objects
+
+let student = {
+  name: "chotu",
+  age: 50,
+  cgpa: 7.1,
+  isPass: true,
+};
+
+for (let key in student) {
+  console.log(key + " : " + student[key]);
 }
 
-else {
-    PersonInfo[anyRandomThing] = prompt("Enter the valuee")
-}
+const sampleData1 = {
+  id: 123,
+  name: "pankaj",
+};
 
-console.log(PersonInfo);
+//json
+let sampleData = [
+  { id: 123, name: "pankaj" },
+  { id: 321, name: "chintu" },
+  { id: 456, name: "sonu" },
+  { id: 654, name: "monu" },
+];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+sampleData.forEach((student)=>{
+    console.log(student.name)
+})
