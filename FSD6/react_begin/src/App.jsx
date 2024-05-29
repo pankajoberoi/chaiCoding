@@ -27,44 +27,30 @@
 
 
 
-import React from 'react'
-import Home from './components/Home'
-import About from './components/About'
-import {Navbar1} from './components/Navbar'
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import List from './components/List'
-import Product from './components/Product'
+// import React from 'react'
+// import Home from './components/Home'
+// import About from './components/About'
+// import {Navbar1} from './components/Navbar'
+// import {BrowserRouter,Routes,Route} from 'react-router-dom'
+// import List from './components/List'
+// import Product from './components/Product'
  
-function App() {
-  return (
-    <div>
-      <Navbar1/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/about/:Fname/' element={<About/>}/>
-        <Route path='/product' element={<Product/>}/>
-        <Route path='/product/:productId/:Qty' element={<Product/>}/>
-      </Routes>
-    </div>
-  )
-}
+// function App() {
+//   return (
+//     <div>
+//       <Navbar1/>
+//       <Routes>
+//         <Route path='/' element={<Home/>}/>
+//         <Route path='/about' element={<About/>}/>
+//         <Route path='/about/:Fname/' element={<About/>}/>
+//         <Route path='/product' element={<Product/>}/>
+//         <Route path='/product/:productId/:Qty' element={<Product/>}/>
+//       </Routes>
+//     </div>
+//   )
+// }
 
-export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// export default App
 
 
 
@@ -114,5 +100,36 @@ export default App
 // }
 
 // export default App
+
+
+import React, { useState } from 'react'
+import ChatRoom from './components/ChatRoom'
+
+function App() {
+  const [roomId,setRoomId]=useState('general')
+  const [show,setShow]=useState(false)
+  
+  return (
+    <div>
+      <label>Choose the chat room : {' '}
+      <select value={roomId}
+              onChange={(e)=>{setRoomId(e.target.value)}}
+      >
+        <option>general</option>
+        <option>travel</option>
+        <option>music</option>
+      </select>
+      </label>
+      <button onClick={()=>{setShow(!show)}}>
+        {show ? 'Close chat' : 'Open chat'}
+      </button>
+      {show  && <hr />}
+      {show && <ChatRoom roomId={roomId}/>}
+      
+    </div>
+  )
+}
+
+export default App
 
 
