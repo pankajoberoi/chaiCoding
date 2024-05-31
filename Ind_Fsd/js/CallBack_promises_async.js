@@ -214,33 +214,155 @@
 
 
 
-function getData(dataId){
-    return new Promise((resolve,reject)=>{
+// function getData(dataId){
+//     return new Promise((resolve,reject)=>{
 
-        setTimeout(()=>{
-            // console.log(dataId,"data");
-            // resolve("successsssss heheheheeh")
-            reject("network issue")
-        },3000)
+//         setTimeout(()=>{
+//             // console.log(dataId,"data");
+//             // resolve("successsssss heheheheeh")
+//             reject("network issue")
+//         },3000)
 
-    })
+//     })
    
     
-}
-console.log("getting data 1......")
-getData(1).then((res)=>{
-    console.log(res)
-    console.log("getting data 2 ......")
-    getData(2).then((res)=>{
-        console.log(res)
-        console.log("getting data 3 ......")
-        getData(3).then((res)=>{
-            console.log(res)
-        })
-    })
-})
+// }
+
+// promise chaining
+// console.log("getting data 1......")
+// getData(1).then((res)=>{
+//     console.log(res)
+//     console.log("getting data 2 ......")
+//     getData(2).then((res)=>{
+//         console.log(res)
+//         console.log("getting data 3 ......")
+//         getData(3).then((res)=>{
+//             console.log(res)
+//         })
+//     })
+// })
 
 
+
+
+// /callback hell->dom like structure
+// console.log("getting data 1 ...........")
+// getData(1,()=>{
+//     console.log("getting data 2 ...........")
+//     getData(2,()=>{
+//         console.log("getting data 3 ...........")
+//         getData(3,()=>{
+//             console.log("getting data 4 ...........")
+//             getData(4) 
+//         })
+//     })
+// })
+
+
+// ===================================================================
+
+
+
+// async function instagram(){
+    
+//     console.log("welcome user")
+// }
+
+// const result=instagram();
+// console.log(result)
+
+// result.then(()=>{
+//     console.log("dekhle reels")
+// })
+
+
+// function apiDelhi(){
+//     return new Promise((resolve,reject)=>{
+        
+//         setTimeout(()=>{
+//             // console.log("waether data of delhi is 52 degree")
+//             // resolve("aa gya temprature tera")
+//             reject("doobara meri marji")
+//         },5000)
+//     })
+// }
+// function apiBhopal(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             // console.log("waether data of bhopal is 42 degree")
+//             reject("meri marji")
+//         },5000)
+//     })
+// }
+
+// async function weatherdata(){
+//     const delhi= await apiDelhi()
+//     console.log(delhi);
+//     const bhopal= await apiBhopal();
+//     console.log(bhopal)
+// }
+
+// const data=weatherdata();
+// console.log(data);
+// data.then(()=>{
+//     console.log("thank you user for using our app")
+// })
+
+// data.catch(()=>{
+//     console.log("try after some time")
+// })
+
+
+
+// function getData(dataId){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("data",dataId)
+//             resolve("balle balle")
+//         },3000)
+
+//     })
+   
+// }
+
+// async function getAllData(){
+//     await getData(1);
+//     await getData(2);
+//     await getData(3);
+//     await getData(4);
+//     await getData(5);
+// }
+
+// getAllData();
+
+
+
+// callback hell->dom like structure
+// console.log("getting data 1 ...........")
+// getData(1,()=>{
+//     console.log("getting data 2 ...........")
+//     getData(2,()=>{
+//         console.log("getting data 3 ...........")
+//         getData(3,()=>{
+//             console.log("getting data 4 ...........")
+//             getData(4) 
+//         })
+//     })
+// })
+
+// promise chaining
+// console.log("getting data 1......")
+// getData(1).then((res)=>{
+//     console.log(res)
+//     console.log("getting data 2 ......")
+//     getData(2).then((res)=>{
+//         console.log(res)
+//         console.log("getting data 3 ......")
+//         getData(3).then((res)=>{
+//             console.log(res)
+//         })
+//     })
+// })
 
 
 

@@ -33,7 +33,8 @@
 // import {Navbar1} from './components/Navbar'
 // import {BrowserRouter,Routes,Route} from 'react-router-dom'
 // import List from './components/List'
-// import Product from './components/Product'
+// import Profile from './components/Profile'
+
  
 // function App() {
 //   return (
@@ -43,14 +44,16 @@
 //         <Route path='/' element={<Home/>}/>
 //         <Route path='/about' element={<About/>}/>
 //         <Route path='/about/:Fname/' element={<About/>}/>
-//         <Route path='/product' element={<Product/>}/>
-//         <Route path='/product/:productId/:Qty' element={<Product/>}/>
+//         <Route path='/profile' element={<Profile/>}/>
+//         <Route path='/profile/:designation' element={<Profile/>}/>
 //       </Routes>
 //     </div>
 //   )
 // }
 
 // export default App
+
+
 
 
 
@@ -102,34 +105,144 @@
 // export default App
 
 
+// import React, { useState } from 'react'
+// import ChatRoom from './components/ChatRoom'
+
+// function App() {
+//   const [roomId,setRoomId]=useState('general')
+//   const [show,setShow]=useState(false)
+  
+//   return (
+//     <div>
+//       <label>Choose the chat room : {' '}
+//       <select value={roomId}
+//               onChange={(e)=>{setRoomId(e.target.value)}}
+//       >
+//         <option>general</option>
+//         <option>travel</option>
+//         <option>music</option>
+//       </select>
+//       </label>
+//       <button onClick={()=>{setShow(!show)}}>
+//         {show ? 'Close chat' : 'Open chat'}
+//       </button>
+//       {show  && <hr />}
+//       {show && <ChatRoom roomId={roomId}/>}
+      
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
 import React, { useState } from 'react'
 import ChatRoom from './components/ChatRoom'
 
 function App() {
-  const [roomId,setRoomId]=useState('general')
-  const [show,setShow]=useState(false)
-  
+
+  const [roomId,setRoomId]=useState('game')
+  const [show,setShow] = useState(false)  
+
   return (
     <div>
-      <label>Choose the chat room : {' '}
-      <select value={roomId}
-              onChange={(e)=>{setRoomId(e.target.value)}}
-      >
-        <option>general</option>
-        <option>travel</option>
-        <option>music</option>
-      </select>
+      <label>
+        choose the chat room : {' '}
+        <select value={roomId}
+          onChange={(e)=>{setRoomId(e.target.value)}}>
+          <option >game</option>
+          <option >music</option>
+          <option >travel</option>
+        </select>
       </label>
       <button onClick={()=>{setShow(!show)}}>
-        {show ? 'Close chat' : 'Open chat'}
+        {show ? 'close chat' : 'open chat'}
       </button>
-      {show  && <hr />}
-      {show && <ChatRoom roomId={roomId}/>}
-      
+
+    {show && <ChatRoom roomId={roomId}/>}
+
     </div>
   )
 }
 
 export default App
+
+
+// import React, { useEffect, useState } from 'react'
+
+// function App() {
+//     const [time,setTime]=useState(1);
+
+//     useEffect(()=>{
+//         console.log("mounting......",time)
+//         const timer=setInterval(()=>{setTime(time + 1)},1000)
+
+//         return function (){
+//             console.log("unmounting ......",time)
+//             clearInterval(timer)
+//         }
+
+//     },[time])
+
+//   return (
+//     <div>
+//         <h1>stopwatch:</h1>
+//         <p>{time}</p>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useEffect, useState } from 'react'
+
+// function App() {
+//   let [time,setTime] = useState(1)
+    
+//   useEffect(()=>{
+//     console.log("adding new interval")
+//     const timer=setInterval(()=>{setTime(time + 1)},1000)
+
+//     return function(){
+//         console.log("clear old interval")
+//         clearInterval(timer);
+//     }
+//   },[time])
+    
+  
+//   return (
+//     <div>
+//       <p>{time}</p>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
 
 

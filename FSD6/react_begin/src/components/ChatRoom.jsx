@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react'
-import {createConnection} from './chat.js'
-function ChatRoom({roomId}) {
-    const [serverUrl,setServerUrl]=useState('http://localhost:1234')
+import {createConnection} from './ChatServer.js'
+function ChatRoom(props) {
+    
+    const [serverUrl,setserverUrl]=useState('https://localhost:420');
 
     useEffect(()=>{
-        console.log("hehe")
-        const connection =createConnection(serverUrl,roomId);
-        connection.connect();
-        return () =>{
-            console.log("byby")
-            connection.disconnect();
-        }
-    },[])
+      const connection=createConnection(serverUrl,props.roomId)
+      connection.connect();
 
+      return ()=>{
+        connection.disconnect();
+      }
+
+    },[props.roomId])
 
   return (
     <div>
       <label>
-        Server URL : {' '}
+        server Url {' '}
         <input value={serverUrl}/>
       </label>
-      <h1>Welcome to the {roomId} room!</h1>
+      <h1>Welcome to {props.roomId} room!</h1>
     </div>
   )
 }

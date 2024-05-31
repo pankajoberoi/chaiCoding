@@ -3,7 +3,7 @@ import Counter from './Counter'
 function Home() {
   return (
     <div>
-      <Counter/>
+      I am Home page 
     </div>
   )
 }
