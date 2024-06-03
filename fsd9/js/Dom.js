@@ -97,16 +97,47 @@
 
 //adding elements to Dom
 
-const container=document.getElementById("section")
-const heading=document.createElement("h1")
-const heading2=document.createElement("h2")
-heading.innerText="jai shree ram"
-heading2.innerText="nalayko ko dimag do"
+// const container=document.getElementById("section")
+// const heading=document.createElement("h1")
+// const heading2=document.createElement("h2")
+// heading.innerText="jai shree ram"
+// heading2.innerText="nalayko ko dimag do"
 
-container.append(heading,heading2);
+// container.append(heading,heading2);
 
 
 
+// const container=document.getElementById("section")
+// const designation=document.getElementById("designation")
+
+// let user="User"
+// user=prompt("enter Your designation",user)
+
+
+// if(user==="teacher"){
+//     designation.innerText="Hello " + user;
+//    const attendance= document.createElement("button");
+//     attendance.innerText="Mark Student's Attendance";
+//     container.appendChild(attendance);
+// }
+// else{
+//     designation.innerText="Hello " + user; 
+// }
+
+
+// Remove Elements from the dom
+
+// const Teacher=document.querySelector("h1");
+
+// Teacher.remove();
+
+
+
+// const container=document.querySelector("div");
+// const dish=document.querySelector("h1");
+
+
+// container.removeChild(dish);
 
 
 

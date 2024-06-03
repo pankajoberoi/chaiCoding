@@ -199,18 +199,68 @@
 
 
 
-import {useContext} from 'react'
+// import {useContext} from 'react'
+// import React from 'react'
+// import Counter from './components/Counter'
+// import { CounterContext } from './context/Counter'
+
+// function App() {
+
+//   const counterState = useContext(CounterContext)
+//   console.log(counterState)
+//   return (
+//     <div>
+//       <h1>Count is {counterState.count}</h1>
+//       <Counter/>
+//       <Counter/>
+//       <Counter/>
+//       <Counter/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+// import React, { useState } from 'react'
+// import Website from './components/Website'
+
+// function App() {
+
+//   let [name,setName]=useState("user")
+
+//   function handleInput(e){
+//     setName(name=e.target.value)
+//   }
+
+//   return (
+//     <div>
+
+//       <label> Name: 
+//         <input type="text" onChange={handleInput}/>
+//       </label>
+
+//       <Website title={name}/>
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
 import React from 'react'
 import Counter from './components/Counter'
-import { CounterContext } from './context/Counter'
 
 function App() {
-
-  const counterState = useContext(CounterContext)
-  console.log(counterState)
   return (
     <div>
-      <h1>Count is {counterState.count}</h1>
+      <h1>Count is : </h1>
       <Counter/>
       <Counter/>
       <Counter/>
@@ -220,6 +270,31 @@ function App() {
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
