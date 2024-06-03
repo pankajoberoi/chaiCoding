@@ -138,36 +138,36 @@
 
 
 
-import React, { useState } from 'react'
-import ChatRoom from './components/ChatRoom'
+// import React, { useState } from 'react'
+// import ChatRoom from './components/ChatRoom'
 
-function App() {
+// function App() {
 
-  const [roomId,setRoomId]=useState('game')
-  const [show,setShow] = useState(false)  
+//   const [roomId,setRoomId]=useState('game')
+//   const [show,setShow] = useState(false)  
 
-  return (
-    <div>
-      <label>
-        choose the chat room : {' '}
-        <select value={roomId}
-          onChange={(e)=>{setRoomId(e.target.value)}}>
-          <option >game</option>
-          <option >music</option>
-          <option >travel</option>
-        </select>
-      </label>
-      <button onClick={()=>{setShow(!show)}}>
-        {show ? 'close chat' : 'open chat'}
-      </button>
+//   return (
+//     <div>
+//       <label>
+//         choose the chat room : {' '}
+//         <select value={roomId}
+//           onChange={(e)=>{setRoomId(e.target.value)}}>
+//           <option >game</option>
+//           <option >music</option>
+//           <option >travel</option>
+//         </select>
+//       </label>
+//       <button onClick={()=>{setShow(!show)}}>
+//         {show ? 'close chat' : 'open chat'}
+//       </button>
 
-    {show && <ChatRoom roomId={roomId}/>}
+//     {show && <ChatRoom roomId={roomId}/>}
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 // import React, { useEffect, useState } from 'react'
@@ -195,6 +195,32 @@ export default App
 // }
 
 // export default App
+
+
+
+
+import {useContext} from 'react'
+import React from 'react'
+import Counter from './components/Counter'
+import { CounterContext } from './context/Counter'
+
+function App() {
+
+  const counterState = useContext(CounterContext)
+  console.log(counterState)
+  return (
+    <div>
+      <h1>Count is {counterState.count}</h1>
+      <Counter/>
+      <Counter/>
+      <Counter/>
+      <Counter/>
+    </div>
+  )
+}
+
+export default App
+
 
 
 

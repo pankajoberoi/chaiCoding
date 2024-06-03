@@ -1,16 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter} from 'react-router-dom'
+// import {BrowserRouter} from 'react-router-dom'
 import App from "./App";
 
+import { CounterProvider } from "./context/Counter";
 
 function Element() {
   
   return (
   <div>
-   <BrowserRouter>
+   {/* <BrowserRouter>
     <App/>
-   </BrowserRouter>
+   </BrowserRouter> */}
+
+   <CounterProvider>
+    <App/>
+   </CounterProvider>
+
   </div>
   )
 }
