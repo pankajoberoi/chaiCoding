@@ -55,28 +55,83 @@
 
 // onchange
 
-const screen=document.getElementById("screen")
-const Input=document.getElementById("name")
+// const screen=document.getElementById("screen")
+// const Input=document.getElementById("name")
 
-Input.onchange = (e) => {
-    console.log(e.target.value)
 
-    const data=document.getElementById("inputData");
-    data.innerText=e.target.value
+// Input.onchange = (obj) => {
     
+//     console.log(obj.target.value)
+//     const data=document.getElementById("inputData");
+//     data.innerText=obj.target.value
 
-}
-
-
-
-
-
+// }
 
 
-
+// const button=document.getElementById("btn")
 
 
 
+// button.onclick = () =>{
+//     alert("mitronnn!!!")
+// }
+
+// button.onclick = () => {
+//     alert("welcome!!!")
+// } 
+
+
+
+// Mouse Events: click, dblclick, mousedown, mouseup, contextmenu, mouseout, mousewheel, mouseover
+// Touch Events: touchstart, touchend, touchmove, touchcancel
+// Keyboard Events: keydown, keyup, keypress
+// Form Events: focus, blur, change, submit
+// Window Events: resize, scroll, load, unload, hashchange
+
+// const button=document.getElementById("btn")
+
+// button.addEventListener("click",()=>{
+//     console.log("hello from fn 1")
+// })
+
+// function handleClick(){
+//     console.log("hello from fn 2")
+// }
+// button.addEventListener("click",handleClick)
+// button.addEventListener("click",()=>{
+//     console.log("hello from fn 3")
+// })
+// button.addEventListener("click",()=>{
+//     console.log("hello from fn 4")
+// })
+
+
+// button.removeEventListener("click",handleClick)
+
+
+
+const modeBtn=document.getElementById("ModeBtn");
+
+const body=document.querySelector("body")
+
+let currMode="light"
+
+modeBtn.addEventListener("click",()=>{
+    if(currMode==='light'){
+        currMode="dark"
+        console.log(currMode)
+        // body.style.backgroundColor="black"
+        body.classList.add("dark")
+        body.classList.remove("light")
+    }
+    else{
+        currMode="light"
+        console.log(currMode)
+        // body.style.backgroundColor="white"
+        body.classList.add("light")
+        body.classList.remove("dark")
+    }
+})
 
 
 
