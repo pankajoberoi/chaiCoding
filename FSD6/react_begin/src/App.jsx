@@ -105,6 +105,43 @@
 // export default App
 
 
+
+// import React from 'react'
+// import Home from './components/Home'
+// import About from './components/About'
+// import Navbar from './components/Navbar'
+// import {Routes,Route} from 'react-router-dom'
+// import Profile from './components/Profile'
+
+// function App() {
+//   return (
+//     <div>
+//       <Navbar/>
+
+//     <Routes>
+//       <Route path='/' element={<Home/>}/>
+//       <Route path='/about'  element={<About/>}/>
+//       <Route path='/about/:Fname/:designation' element={<About/>}></Route>
+//       <Route path='/profile' element={<Profile/>}></Route>
+//       <Route path='/profile/:designation' element={<Profile/>}></Route>
+//     </Routes>
+
+
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
+
 // import React, { useState } from 'react'
 // import ChatRoom from './components/ChatRoom'
 
@@ -254,26 +291,46 @@
 
 
 
+// import React from 'react'
+// import Counter from './components/Counter'
+// import { useContext } from 'react'
+// import {CounterContext} from './context/Counter'
+
+// function App() {
+//   const counterState=useContext(CounterContext)
+//   console.log(counterState)
+//   return (
+//     <div>
+//       <h1>Count is : {counterState.count}</h1>
+//       <Counter/>
+//       <Counter/>
+//       <Counter/>
+//       <Counter/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
 import React from 'react'
-import Counter from './components/Counter'
+import Item from './components/Item'
+import Cart from './components/Cart'
 
 function App() {
   return (
     <div>
-      <h1>Count is : </h1>
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
+      <Item name="Macbook" price={100000}/>
+      <Item name="Mobile" price={40000}/>
+      <Item name="Shoes" price={35000}/>
+      <Cart/>
     </div>
   )
 }
 
 export default App
-
-
-
-
 
 
 

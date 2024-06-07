@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        #VIP{
-            height: 200px;
-            width: 200px;
-            background-color: aqua;
-            border: 2px solid black;
-        }
+    <!-- <style>
+      #VIP {
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+        border: 2px solid black;
+      }
 
-        #btn{
-            display: none;
-        }
-    </style>
-</head>
-<body>
-    
+      #btn {
+        display: none;
+      }
+      .screen {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      .passwords {
+        display: none;
+      }
+    </style> -->
+  </head>
+  <body>
     <!-- Inline Event listeners -->
 
     <!-- <button onclick="console.log('button is clicked'); alert('Login Successfull')">Login</button>
@@ -28,18 +36,40 @@
 
     <div id="VIP" onmouseout="alert('Thank You for visiting')">Vip Parking area</div> -->
 
-
-    <div id="screen">
+    <!-- <div id="screen">
         Welcome User!!!!!
     </div>
-    <button id="btn">Bonus</button>
+    <button id="btn">Bonus</button> -->
+
+    <!-- <div class="screen">
+        Your Passwords
+        <div class="passwords">
+            Pankaj - 1234
+            Aastha - 4321
+            aman - 6789
+        </div>
+    </div> -->
+
+    <!-- <button id="btn">Click me</button>
+    <button id="btn2">Click me twice</button> -->
+
+    <!-- <form action="">
+        Name : <input type="text" placeholder="enter your name " id="name">
+        Age : <input type="text" placeholder="enter your age " id="age">
+        <button type="submit" id="submit">Submit</button>
+    </form>-->
+
+    
 
 
+    Name : <input type="text" placeholder="Your name" id="name">
 
-
-
+    <div id="screen">
+        <h1>User details: </h1>
+        <p id="inputData"></p>
+    </div> 
 
 
     <script src="Events.js"></script>
-</body>
+  </body>
 </html>

@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
+// import { CounterProvider } from "./context/Counter";
+import { CartProvider } from "./context/Cart";
 import App from "./App";
 
 
@@ -9,13 +11,18 @@ function Element() {
   
   return (
   <div>
+   
    {/* <BrowserRouter>
-    <App/>
+      <App/>
    </BrowserRouter> */}
 
-    
+    {/* <CounterProvider>
     <App/>
+    </CounterProvider> */}
    
+    <CartProvider>
+      <App/>
+    </CartProvider>
 
   </div>
   )
