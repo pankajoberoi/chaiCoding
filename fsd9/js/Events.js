@@ -110,28 +110,44 @@
 
 
 
-const modeBtn=document.getElementById("ModeBtn");
+// const modeBtn=document.getElementById("ModeBtn");
 
-const body=document.querySelector("body")
+// const body=document.querySelector("body")
 
-let currMode="light"
+// let currMode="light"
 
-modeBtn.addEventListener("click",()=>{
-    if(currMode==='light'){
-        currMode="dark"
-        console.log(currMode)
-        // body.style.backgroundColor="black"
-        body.classList.add("dark")
-        body.classList.remove("light")
-    }
-    else{
-        currMode="light"
-        console.log(currMode)
-        // body.style.backgroundColor="white"
-        body.classList.add("light")
-        body.classList.remove("dark")
-    }
-})
+// modeBtn.addEventListener("click",()=>{
+//     if(currMode==='light'){
+//         currMode="dark"
+//         console.log(currMode)
+//         // body.style.backgroundColor="black"
+//         body.classList.add("dark")
+//         body.classList.remove("light")
+//     }
+//     else{
+//         currMode="light"
+//         console.log(currMode)
+//         // body.style.backgroundColor="white"
+//         body.classList.add("light")
+//         body.classList.remove("dark")
+//     }
+// })
 
+
+const formEl=document.querySelector("form");
+
+
+// formEl.addEventListener("submit",(event)=>{
+//     event.preventDefault();
+//     console.log("form submitted")
+// })
+
+
+// formEl.addEventListener("submit",(event)=>{
+//     event.preventDefault();
+//    console.log(formEl.elements[0].value) 
+//    console.log(formEl.elements[1].value) 
+//    console.log(formEl.elements[2].value) 
+// })
 
 

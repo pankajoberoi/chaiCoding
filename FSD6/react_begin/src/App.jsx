@@ -315,24 +315,44 @@
 
 
 
+// import React from 'react'
+// import Counter from './components/Counter'
+// import { useContext } from 'react';
+// import { CounterContext } from './context/Counter';
+// function App() {
+//   const CounterState=useContext(CounterContext)
+//   return (
+//     <div>
+//       <h1>Count is : {CounterState.count}</h1>
+//       <Counter/>
+//       <Counter/>
+//       <Counter/>
+//       <Counter/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
-import Counter from './components/Counter'
-import { useContext } from 'react';
-import { CounterContext } from './context/Counter';
+import Item from './components/Item'
+import Cart from './components/Cart'
+
 function App() {
-  const CounterState=useContext(CounterContext)
   return (
     <div>
-      <h1>Count is : {CounterState.count}</h1>
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
+      <Item product="Mackbook" price={100000}/>
+      <Item product="Mobile" price={10000}/>
+      <Item product="Shoes" price={2000}/>
+      <Item product="Shirt" price={3000}/>
+      <Cart/>
     </div>
   )
 }
 
 export default App
+
 
 
 

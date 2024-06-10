@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {BrowserRouter} from 'react-router-dom'
-import { CounterProvider } from "./context/Counter";
+// import {BrowserRouter} from 'react-router-dom'
+// import { CounterProvider } from "./context/Counter";
+import { CartProvider } from "./context/Cart";
 import App from "./App";
 
 
@@ -15,9 +16,16 @@ function Element() {
       <App/>
    </BrowserRouter> */}
 
-    <CounterProvider>
+    {/* <CounterProvider>
      <App/>
-    </CounterProvider>
+    </CounterProvider> */}
+
+    <CartProvider>
+      <App/>
+    </CartProvider>
+        
+      
+
    
 
   
