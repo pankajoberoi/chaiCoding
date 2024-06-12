@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+.app{
+    background: white;
+    width: 90%;
+    max-width: 650px;
+    margin: 100px auto;
+    border-radius: 15px;
+    padding:30px;
+}
+.app h1{
+    font-size: 40px;
+    color: red;
+    font-weight: 900;
+}
+.quiz{
+    padding: 20px 0px;
+}
+
+.quiz h2{
+    font-size:25px ;
+    color: red;
+    font-weight: 700;
+}
+
+.btn{
+    background-color: white;
+    font: 500;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin:10px 0px;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+}
+
+#next-btn{
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    width: 120px;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}

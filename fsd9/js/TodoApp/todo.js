@@ -22,7 +22,6 @@ function createTaskElement(taskText){
         if(newTaskText !== ""){
             taskElement.querySelector("span").innerText=newTaskText
         }
-        
     })
 
     return taskElement;

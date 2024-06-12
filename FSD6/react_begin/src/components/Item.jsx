@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { CartContext } from "../context/Cart";
 function Item(props) {
   const cart = useContext(CartContext);
-
   return (
     <div className="Item-card">
       <h4>{props.product}</h4>
