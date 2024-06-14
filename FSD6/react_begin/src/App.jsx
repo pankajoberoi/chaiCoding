@@ -335,27 +335,51 @@
 // export default App
 
 
-import React from 'react'
-import Item from './components/Item'
-import Cart from './components/Cart'
+// import React from 'react'
+// import Item from './components/Item'
+// import Cart from './components/Cart'
+
+// function App() {
+//   return (
+//     <div>
+//       <Item product="Mackbook" price={100000}/>
+//       <Item product="Mobile" price={10000}/>
+//       <Item product="Shoes" price={2000}/>
+//       <Item product="Shirt" price={3000}/>
+//       <Cart/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+import React, { useState } from 'react'
+import TodoForm from './components/TodoForm'
+import TodoList from './TodoList';
 
 function App() {
+  const [todos,setTodos]=useState([]);
+
+  const addTodo = (todo) =>{
+    setTodos([...todos,{id:Date.now(),text:todo}])
+  }
+
+
+
+
   return (
     <div>
-      <Item product="Mackbook" price={100000}/>
-      <Item product="Mobile" price={10000}/>
-      <Item product="Shoes" price={2000}/>
-      <Item product="Shirt" price={3000}/>
-      <Cart/>
+      <h1>Todo List</h1>
+      <TodoForm addTodo={addTodo}/>
+      <TodoList todos={todos}/>
     </div>
   )
 }
 
 export default App
-
-
-
-
 
 
 

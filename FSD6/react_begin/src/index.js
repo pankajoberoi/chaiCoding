@@ -20,9 +20,11 @@ function Element() {
      <App/>
     </CounterProvider> */}
 
-    <CartProvider>
+    {/* <CartProvider>
       <App/>
-    </CartProvider>
+    </CartProvider> */}
+
+    <App/>
         
       
 
