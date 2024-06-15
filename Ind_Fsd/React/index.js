@@ -25,10 +25,10 @@
 
 
 
-// const dabba=<span><h1>welcome to react</h1></span>
+const dabba=<span><h1>welcome to react</h1></span>
 
-// let rootEl=document.getElementById("root")
+let rootEl=document.getElementById("root")
 
-// ReactDOM.render(dabba,rootEl)
+ReactDOM.render(dabba,rootEl)
 
 // npx create-react-app react_begin
