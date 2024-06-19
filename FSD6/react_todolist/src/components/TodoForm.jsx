@@ -8,7 +8,7 @@ function TodoForm({addTodo}) {
         e.preventDefault();
         if(value){
         addTodo(value);
-        setValue('');
+        setValue(' ');
         }
         
     }
