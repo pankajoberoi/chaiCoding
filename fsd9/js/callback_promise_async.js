@@ -45,6 +45,58 @@
 // console.log("extra cheese")
 
 
+//callbacks
+
+
+// function sum (a,b){
+//     console.log(a+b)
+// }
+
+// function calculator(a,b,fn,fn2){
+//     fn2(a,b)
+// }
+
+// calculator(10,30,(a,b)=>{
+//     console.log(a+b)
+// },(c,d)=>{
+//     console.log(c+d)
+// });
+
+//callbacks with example
+
+function getData(dataId,getNextData){
+
+    setTimeout(()=>{
+        console.log("data for " , dataId);
+        if(getNextData){
+            getNextData();
+        }
+        
+    },3000)
+    
+    
+}
+
+
+// getData(1,getData(2))
+
+//callback hell syntax x
+// console.log("getting data1.....")
+// getData(1,()=>{
+//     console.log("getting data2.....")
+//     getData(2,()=>{
+//         console.log("getting data3.....")
+//         getData(3,()=>{
+//             console.log("getting data4.....")
+//             getData(4)
+//         })
+//     });
+// })  
+
+
+// promises
+
+
 
 
 
