@@ -200,38 +200,56 @@
 
 
 
-async function apiDelhi(){
+// async function apiDelhi(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("requested on delhi server")
+//             // res("balle balle");
+//             rej("network issue")
+//         },7000)
+//     })
+// }
+
+// async function apiPune(){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             console.log("weather data of Pune")
+//             res("balle balle");
+//         },7000)
+//     })
+// }
+
+// async function GetWeatherData(){
+//     const delhi=await apiDelhi();
+//     console.log(delhi)
+//     const pune=await apiPune();
+//     console.log(pune)
+// }
+
+// console.log("hello");
+
+// GetWeatherData();
+
+
+function getData(dataId){
     return new Promise((res,rej)=>{
         setTimeout(()=>{
-            console.log("requested on delhi server")
-            // res("balle balle");
-            rej("network issue")
-        },7000)
-    })
+            res("success")
+            console.log("data for " , dataId);
+            
+        },2000)
+    }) 
 }
 
-async function apiPune(){
-    return new Promise((res,rej)=>{
-        setTimeout(()=>{
-            console.log("weather data of Pune")
-            res("balle balle");
-        },7000)
-    })
+async function getAlldata(){
+    await getData(1);
+    await getData(2);
+    await getData(3);
+   
 }
+getAlldata();
 
-async function GetWeatherData(){
-    const delhi=await apiDelhi();
-    console.log(delhi)
-    const pune=await apiPune();
-    console.log(pune)
-}
-
-console.log("hello");
-
-GetWeatherData();
-
-
-
+console.log("further execution chal rhi hai apki bina ruke")
 
 
 
