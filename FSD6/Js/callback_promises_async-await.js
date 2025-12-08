@@ -282,3 +282,43 @@
 //     })
 //   })
 // });
+
+
+
+
+// setTimeout(()=>{
+//     console.log("hello");
+// },3000)
+
+
+// const result = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("I am promise");
+//         resolve("i am done")
+//     },5000)
+// })
+
+// console.log(result);
+
+// result.then((res)=>{
+//     console.log("package deliver");
+// })
+
+// result.catch((reject)=>{
+//     console.log("Network issue");
+// })
+
+
+// async function hello() {
+//     console.log("Namaste!!");
+// }
+
+ 
+
+
+
+
+
+
+
+

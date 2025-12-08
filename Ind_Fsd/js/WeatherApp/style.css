@@ -1,93 +1,305 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    color: white;
+/* ===== RESET ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: black;
+/* ===== BASE COLORS & FONTS ===== */
+
+:root {
+  --bg: radial-gradient(circle at top left, #4f46e5, #020617);
+  --card-bg: rgba(15, 23, 42, 0.96);
+  --accent: #38bdf8;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
 }
 
-.card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(aqua,purple);
-    margin: 100px auto;
-    border-radius: 15px;
-    padding: 40px 35px;
-    text-align: center;
+body {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text-main);
+  padding: 24px;
 }
 
-.search input{
-    border: 0;
-    outline: 0;
-    background-color: #ebfffc;
-    color: #555;
-    padding: 16px 25px;
-    border-radius: 30px;
-    margin-right: 15px;
-    font-size: 20px;
+/* ===== LAYOUT WRAPPER ===== */
+
+.app-wrapper {
+  width: 100%;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr;
+  gap: 32px;
 }
 
-.search button{
-    border: 0;
-    outline: 0;
-    background-color: #ebfffc;
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+/* Mobile: stack columns */
+@media (max-width: 768px) {
+  .app-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
-.search button img{
-    width: 18px;
+/* ===== LEFT PANEL (INFO) ===== */
+
+.app-info {
+  padding: 24px 12px 24px 4px;
 }
 
-.weather-icon{
-    width: 180px;
-    margin-top: 30px;
+.brand-title {
+  font-size: clamp(2.2rem, 2.5vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-}
-.weather h2{
-    font-size: 45px;
-    font-weight: 600;
-    margin-top: -10px;
-}
-.details{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    padding: 0 20px;
-}
-.col{
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-.col img{
-    width: 40px;
-    margin-right: 10px;
-}
-.humidity,.wind{
-    font-size: 30px;
-    margin-top: -8px;
+.brand-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  max-width: 320px;
 }
 
-.error{
-    text-align: left;
-    margin-left: 50px;
-    font-size: 20px;
-    margin-top: 10px;
-    display: none;
+.feature-list {
+  list-style: none;
+  margin-bottom: 16px;
 }
 
-.weather{
-    display: none;
+.feature-list li {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin-bottom: 6px;
 }
 
+.small-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.small-hint span {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* ===== MAIN CARD ===== */
+
+.card {
+  width: 100%;
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 20px 18px 14px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+/* ===== CARD HEADER ===== */
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-caption {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.card-badge {
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+/* ===== SEARCH BAR ===== */
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.search input {
+  flex: 1;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  outline: none;
+  background: #020617;
+  color: var(--text-main);
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.search input::placeholder {
+  color: rgba(148, 163, 184, 0.9);
+}
+
+.search input:focus {
+  border-color: var(--accent);
+}
+
+.search button {
+  border: none;
+  outline: none;
+  background: #1d4ed8;
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 18px;
+  filter: brightness(0) invert(1);
+}
+
+/* ===== ERROR MESSAGE ===== */
+
+.error {
+  font-size: 0.8rem;
+  color: #fecaca;
+  background: #7f1d1d;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-top: 6px;
+  display: none; /* JS toggles this */
+}
+
+/* ===== WEATHER SECTION ===== */
+
+.weather {
+  margin-top: 10px;
+  display: none; /* JS sets display: block */
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.weather-icon {
+  width: 110px;
+}
+
+.weather-primary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.city {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.weather-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* Divider line */
+.divider {
+  margin: 14px 0 10px;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* ===== DETAILS GRID ===== */
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: #020617;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+}
+
+.detail-icon-wrap img {
+  width: 22px;
+}
+
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detail-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.humidity,
+.wind {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ===== CARD FOOTER ===== */
+
+.card-footer {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(148, 163, 184, 0.5);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.brand-chip {
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  margin-left: 4px;
+}
+
+/* ===== SMALL SCREEN TWEAKS ===== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .weather-icon {
+    width: 90px;
+  }
+
+  .temp {
+    font-size: 2.2rem;
+  }
+}

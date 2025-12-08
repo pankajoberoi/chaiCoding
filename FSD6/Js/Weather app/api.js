@@ -1,5 +1,8 @@
-const URL = "https://cat-fact.herokuapp.com/facts";
-const factPara = document.querySelector("#fact");
+
+const URL = "https://bible-api.com/john%203:16";
+
+
+const factPara = document.querySelector("#facts");
 const button = document.querySelector("#btn");
 
 async function getFacts() {
@@ -7,8 +10,8 @@ async function getFacts() {
   let response = await fetch(URL);
   console.log(response);
   let data = await response.json();
-  console.log(data[1].text);
-  factPara.innerText = data[1].text;
+  console.log(data);
+  //factPara.innerText = data.text;
 }
 
 button.addEventListener("click", getFacts);

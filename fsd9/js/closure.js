@@ -1,38 +1,34 @@
 
-// lexical scope
 
-// let greetings="welcome";
+// let greetings="namaste!!!!!";
 // function someFunc(){
-//     let username="pankaj"      
-
-//     function PrintName(){
-        
-//         console.log(username)
-//     }
+//     let username="Pankaj";
     
+//     function PrintName(){
+//         console.log(username);
+        
+//     }
 //     PrintName();
-
 // }
 
-// someFunc()
+// someFunc();
+// console.log(greetings);
 
-//closure
 
-let greetings="welcome";
+
+
+let greetings="namaste!!!!!";
 function someFunc(){
-    let username="pankaj"
-
-    function PrintName(){
-        console.log(username)
-    }
+    let username="Pankaj";
     
-    return PrintName
-
+    function PrintName(){
+        console.log(username);
+        
+    }
+    return PrintName;
+    
 }
 
-let result=someFunc()
+let result=someFunc();
 result();
-
-
-
-
+console.log(greetings);

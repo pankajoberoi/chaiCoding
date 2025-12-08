@@ -105,15 +105,16 @@
 
 
 
-// promises -> object -> success -> reject
-// const result=new Promise((resolve,reject)=>{
-//     console.log("iphone nhi aa paya");
-//     // resolve("success of your delivery")
-//     reject("transport issue")
-
-// })
-
-// console.log(result)
+// Promises -> object -> success/reject
+const result=new Promise((resolve,reject)=>{
+    //Working on backend
+    console.log("Orderded an Iphone");
+    
+    // Processing
+    resolve("success of your delivery");
+})
+//Output on Frontend
+console.log(result)
 
 
 // function getData(dataId,GetCallBack){
